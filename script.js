@@ -826,7 +826,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Vervollständigen Sie den Satz: Volt, Watt und das Ohm, ohne uns ...",
+        "question": "Vervollständigen Sie den Satz: Volt, Watt, Ampere, Ohm, ohne uns ...",
         "image": "Bilder Querbeet/bild1.jpg",
         "answers": [".. gibt's kein Strom", "... bleibt der Olaf gern at home"],
         "correct": [0]
