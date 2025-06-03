@@ -772,7 +772,7 @@ const questions = {
         "type": "textWithImage",
         "question": "Welches Material leitet den Strom am besten ?",
         "image": "Bilder Elektrotechnik 5/bild4.jpg",
-        "answers": ["Aluminium", "Silber", "Kupfer", "Gold"],
+        "answers": ["Aluminium", "Eisen", "Kupfer", "Gold"],
         "correct": [1]
     },
     {
