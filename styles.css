@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    background-color: #f5f07d;
+    background-color: #005b96;
     padding: 20px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -22,23 +22,23 @@ main {
 }
 
 footer {
-    background-color: #f5f07d;
+    background-color: #005b96;
     padding: 10px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
 .category-container {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  /* Zentriert die Buttons horizontal */
-    align-items: center;      /* Zentriert die Buttons optional vertikal */
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
 .category-btn {
-    background-color: #f2e916;
-    color: black;
+    background-color: #006ab0;
+    color: white;
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -50,8 +50,8 @@ footer {
 }
 
 .category-btn.selected {
-    background-color: #9e9d7b;
-    color: black;
+    background-color: #1a9c23;
+    color: white;
 }
 
 .questions-area {
@@ -83,7 +83,7 @@ footer {
     width: 100%;
     max-width: 500px;
     text-align: center;
-    background-color: #bfbfb6; /* Hintergrundfarbe der Antwort-Schaltflächen */
+    background-color: #d3dbe0; /* Hintergrundfarbe der Antwort-Schaltflächen */
     color: black; /* Textfarbe */
     border: none; /* Rahmen entfernen */
     border-radius: 10px; /* Ecken abrunden */
@@ -91,21 +91,22 @@ footer {
     font-size: 16px; /* Schriftgröße */
 }
 
-.answers-container button:hover {
-    background-color: #a3a396; 
-    color: black; /* Farbe des Texts */
-    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
-    transition: all 0.3s ease; /* Weicher Übergangseffekt */
-}
-
 .feedback {
     margin-top: 10px;
     text-align: center;
 }
 
-.feedback.correct {
-    color: green;
+@keyframes blinkGreenBold {
+    0% { color: green; font-weight: normal; }
+    50% { color: green; font-weight: bold; }
+    100% { color: green; font-weight: normal; }
 }
+
+.feedback.correct {
+    animation: blinkGreenBold 1s infinite;
+    animation-fill-mode: both;
+}
+
 
 .feedback.wrong {
     color: red;
@@ -117,22 +118,14 @@ h3 {
 }
 
 .next-btn {
-    background-color: #1ed445; /* Farbe für Weiter-Button */
-    color: white; /* Weißer Text */
-    border: none; /* Kein Rahmen */
-    padding: 10px 20px; /* Gleicher Innenabstand wie bei Reset */
-    margin: 20px auto; /* Zentriert und mit Abstand */
-    cursor: pointer; /* Zeiger-Cursor beim Hover */
-    border-radius: 15px; /* Gleiche abgerundete Ecken */
-    display: block; /* Blockweise Darstellung */
-    font-size: 16px; /* Schriftgröße angepasst */
-    font-weight: bold; /* Fetter Text wie bei Reset */
-    text-align: center; /* Zentrierter Text */
-    transition: background-color 0.3s ease; /* Weicher Farbübergang */
-}
-
-.next-btn:hover {
-    background-color: #6C6C64; /* Dunkleres Grau beim Hover */
+    margin: 20px 0;
+    background-color: #8B8B83;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 50%;
 }
 
 .new-quiz-btn, .restart-btn {
@@ -181,10 +174,13 @@ h3 {
         margin-top: 10px;
     }
 
+    .answers-container button {
+        max-width: 100%;
+    }
 }
 
 footer p {
-    color: black;
+    color: #b0b3b8;
     font-size: 12px;
 }
 
@@ -236,6 +232,24 @@ footer p {
     margin-top: 20px;
 }
 
+.category-btn,
+.subcategory-btn {
+    flex: 0 1 calc(45% - 20px);
+    padding: 10px;
+    background-color: #005b96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.category-btn:hover,
+.subcategory-btn:hover {
+    background-color: #003f6f;
+}
+
 .medal-image {
     max-width: 120px; /* Maximale Breite für die Medaille */
     max-height: 120px; /* Maximale Höhe der Medaille */
@@ -266,6 +280,21 @@ footer p {
     text-align: center;
 }
 
+.reset-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 15px;
+    display: block;
+    font-size: 16px;
+}
+
+.reset-btn:hover {
+    background-color: #c9302c;
+}
 
 /* CSS-Animation für das Anwachsen der Medaillenbilder */
 @keyframes grow {
@@ -518,7 +547,7 @@ footer p {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #e65364; /* Roter Hintergrund */
+    background-color: #d9534f; /* Roter Hintergrund */
     color: white;
     border: none;
     border-radius: 15px;
@@ -526,11 +555,10 @@ footer p {
     width: auto;
     max-width: 200px;
     transition: background-color 0.3s;
-    font-weight: bold;
 }
 
 .reset-btn:hover {
-    background-color: #6C6C64;
+    background-color: #c9302c;
 }
 
 img {
@@ -621,4 +649,3 @@ img {
     border-radius: 15px;
     display: block;
 }
-
