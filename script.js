@@ -1,8 +1,34 @@
 const questions = {
 
-    
- "Elektrotechnik 1": [
 
+"Elektrotechnik 1":[
+    {
+        type: "textWithImage",
+        question: "Wie ist das Elektron geladen ?",
+        image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
+        answers: ["positiv", "gar nicht", "neutral", "negativ"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich ?",
+        image: ["Bilder Elektrotechnik 1/bild2.jpg"],
+        answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Was ist die treibende Kraft in einem Stromkreis ?",
+        image: ["Bilder Elektrotechnik 1/bild5.jpg"],
+        answers: ["Die Leistung P", "Die Ladung Q", "Der Widerstand R", "Die Spannung U"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Aussagen sind richtig ?",
+        image: ["Bilder Querbeet/bild5.jpg"],
+        answers: ["Eine Spannung liegt an einem Widerstand an", "Ein Strom liegt an einem Widerstand an", "Ein Strom ließt an einem Widerstand an", "Ein Strom fließt durch einen Widerstand durch"], correct: [0, 3]
+    },
     {
         type: "textWithImage",
         question: "Aus welchen drei grundlegenden Elementen besteht ein Stromkreis ?",
@@ -28,7 +54,7 @@ const questions = {
         type: "textWithImage",
         question: "Welche Ladung besitzt das Neutron ?",
         image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
-        answers: ["eine positive", "keine", "mehr positive als negative", "negativ"],
+        answers: ["eine positive", "eine neutrale", "mehr positive als negative", "negativ"],
         correct: [1]
     },
     {
@@ -826,9 +852,9 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Vervollständigen Sie den Satz: Volt, Watt, Ampere, Ohm, ohne uns ...",
+        "question": "Vervollständigen Sie den Satz: Volt, Watt, Ampere, Ohm ...",
         "image": "Bilder Querbeet/bild1.jpg",
-        "answers": [".. gibt's kein Strom", "... bleibt der Olaf gern at home"],
+        "answers": ["... ohne uns gibt's kein Strom", "... bleibt der Olaf gern at home"],
         "correct": [0]
     }
 ],
@@ -2967,7 +2993,7 @@ const questions = {
 
   {
     type: "textWithImage",
-    question: "Wie heißt dieses elektronische Bauteil?",
+    question: "Wie heißt dieses elektronische Bauteil ?",
     image: "Bilder Elektronik/bild1.jpg",
     answers: ["Kondensator", "Widerstand", "Diode", "Spule"],
     correct: [2]
@@ -2981,7 +3007,7 @@ const questions = {
   },
   {
     type: "textWithImage",
-    question: "Welche Funktion hat dieses Bauteil in der Schaltung?",
+    question: "Welche Funktion hat dieses Bauteil in der Schaltung ?",
     image: "Bilder Elektronik/bild3.jpg",
     answers: [
       "Es reduziert die Spannung für die LED",
@@ -2993,7 +3019,7 @@ const questions = {
   },
   {
     type: "textWithImage",
-    question: "Wie wird ein Schaltkreis mit einer Diode beeinflusst?",
+    question: "Wie wird ein Schaltkreis mit einer Diode beeinflusst ?",
     image: "Bilder Elektronik/bild4.jpg",
     answers: [
       "Der Strom fließt in beide Richtungen",
@@ -3005,75 +3031,75 @@ const questions = {
   },
   {
     type: "textWithImage",
-    question: "Welches Bauteil ist hier zu sehen?",
+    question: "Welches Bauteil ist hier zu sehen ?",
     image: "Bilder Elektronik/bild5.jpg",
     answers: ["Widerstand", "ELKO", "Spule", "Diode"],
     correct: [1]
   },
   {
     type: "textWithImage",
-    question: "Wie verhält sich ein Kondensator im Gleichstromkreis im Einschaltmoment?",
+    question: "Wie verhält sich ein Kondensator im Gleichstromkreis im Einschaltmoment ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Er wirkt wie ein Kurzschluss", "Er wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Widerstand R"],
     correct: [0]
   },
   {
     type: "textWithImage",
-    question: "Wie verhält sich ein Kondensator im Gleichstromkreis, wenn er voll aufgeladen ist?",
+    question: "Wie verhält sich ein Kondensator im Gleichstromkreis im Ausschaltmoment ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Er wirkt wie eine Unterbrechnung", "Er wirkt wie ein Kurzschluss", "Er verhält sich wie ein Widerstand R"],
     correct: [0]
   },
   {
     type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe mit einem Kondensator im DC-Kreis geschaltet wird?",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe zu einem Kondensator im DC-Kreis geschaltet wird ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Nichts. Die LED bleibt dunkel", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
     correct: [2]
   },
   {
     type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu einem Kondensator im DC-Kreis geschaltet wird?",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu einem Kondensator im DC-Kreis geschaltet wird ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Nichts. Die LED bleibt hell", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
     correct: [1]
   },
  {
     type: "textWithImage",
-    question: "Wie verhält sich eine Spule im Gleichstromkreis im Einschaltmoment?",
+    question: "Wie verhält sich eine Spule im Gleichstromkreis im Einschaltmoment ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Sie wirkt wie ein Kurzschluss", "Sie wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Kondensator C"],
     correct: [1]
   },
  {
     type: "textWithImage",
-    question: "Wie verhält sich eine Spule im Gleichstromkreis, nachdem dem Einschaltmoemrnt?",
+    question: "Wie verhält sich eine Spule im Gleichstromkreis im Ausschaltmoment ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Sie wirkt wie ein Kurzschluss", "Sie wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Kondensator C"],
     correct: [0]
   },
   {
     type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe mit einer Spule im DC-Kreis geschaltet wird?",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe zu einer Spule im DC-Kreis geschaltet wird ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Nichts. Die LED bleibt dunkel", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
     correct: [1]
   },
   {
     type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu einer Spule im DC-Kreis geschaltet wird?",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu Spule im DC-Kreis geschaltet wird ?",
     image: "Bilder Querbeet/bild5.jpg",
     answers: ["Nichts. Die LED bleibt hell", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
     correct: [2]
-  }
+  },
 
 
-]    
+]
 
 };
 
+
 const categoryNames = Object.keys(questions);
-const BLINK_DURATION = 1200; // Zeit in Millisekunden 
 
 let currentCategory = '';
 let score = 0;
@@ -3082,7 +3108,6 @@ let categoryQuestions = [];
 let selectedAnswers = [];
 let multiChoiceTimer = null;
 let startTime;
-
 
 function disableCompletedCategories() {
     const allCategoryButtons = document.querySelectorAll('.category-btn');
@@ -3093,13 +3118,18 @@ function disableCompletedCategories() {
             const progressData = JSON.parse(savedData);
             if (progressData.questionIndex >= questions[category].length) {
                 button.disabled = true;
-                button.classList.add('completed'); // Klasse zum Ausgrauen
+                button.classList.add('completed');
             }
         }
     });
 }
 
+function clearProgress() {
+    localStorage.clear();
+    location.reload();
+}
 
+// Fortschritt speichern
 function saveProgress() {
     const progressData = {
         questionIndex: questionIndex,
@@ -3107,7 +3137,6 @@ function saveProgress() {
         selectedAnswers: selectedAnswers,
     };
     localStorage.setItem(`progress_${currentCategory}`, JSON.stringify(progressData));
-    console.log(`Progress gespeichert für ${currentCategory}:`, progressData); // Debug
 }
 
 // Fortschritt laden
@@ -3121,12 +3150,8 @@ function loadProgress(category) {
 }
 
 function loadCategory(category) {
-
-    const introImage = document.getElementById('intro-image');
-    if (introImage) {
-        introImage.style.display = 'none';
-    }
     saveProgress(); // Den aktuellen Fortschritt speichern, bevor die Kategorie gewechselt wird
+
     const allCategoryButtons = document.querySelectorAll('.category-btn');
     allCategoryButtons.forEach(btn => {
         if (!btn.classList.contains('answer-btn')) {
@@ -3203,7 +3228,6 @@ function displayQuestion() {
 
     if (questionIndex >= categoryQuestions.length) {
         displayScore();
-        saveProgress();
         disableCompletedCategories();
         if (allCategoriesCompleted()) {
             showOverallResultButton();
@@ -3215,7 +3239,6 @@ function displayQuestion() {
     const questionElement = document.createElement('div');
     questionElement.classList.add('question');
 
-    // Frage-Nummer anzeigen
     const questionNumber = document.createElement('div');
     questionNumber.classList.add('question-number');
     questionNumber.innerHTML = `Frage ${questionIndex + 1} von ${categoryQuestions.length}`;
@@ -3225,153 +3248,159 @@ function displayQuestion() {
     questionTitle.innerHTML = questionData.question;
     questionElement.appendChild(questionTitle);
 
+    const answersContainer = document.createElement('div');
+    answersContainer.classList.add('answers-container');
+
+    if (questionData.type === 'text' || !questionData.type) {
+        questionData.answers.forEach((answer, answerIndex) => {
+            const answerButton = document.createElement('button');
+            answerButton.innerHTML = answer;
+            answerButton.classList.add('answer-btn');
+
+            if (selectedAnswers.includes(answerIndex)) {
+                answerButton.classList.add('selected');
+            }
+
+            answerButton.onclick = function () {
+                handleAnswerClick(answerIndex, answerButton);
+            };
+
+            answersContainer.appendChild(answerButton);
+        });
+    } else if (questionData.type === 'image') {
+    questionData.images.forEach((image, imageIndex) => {
+        const imageButton = document.createElement('img');
+        imageButton.src = image;
+        imageButton.classList.add('answer-img');
+
+        if (selectedAnswers.includes(imageIndex)) {
+            imageButton.classList.add('selected');
+        }
+
+        imageButton.onclick = function () {
+            handleAnswerClick(imageIndex, imageButton);
+        };
+
+        answersContainer.appendChild(imageButton);
+    });
+}
+
+
     if (questionData.type === 'textWithImage') {
         const imageElement = document.createElement('img');
         imageElement.src = questionData.image;
         imageElement.classList.add('question-image');
         questionElement.appendChild(imageElement);
+
+        questionData.answers.forEach((answer, answerIndex) => {
+            const answerButton = document.createElement('button');
+            answerButton.innerHTML = answer;
+            answerButton.classList.add('answer-btn');
+
+            if (selectedAnswers.includes(answerIndex)) {
+                answerButton.classList.add('selected');
+            }
+
+            answerButton.onclick = function () {
+                handleAnswerClick(answerIndex, answerButton);
+            };
+
+            answersContainer.appendChild(answerButton);
+        });
     }
-
-    const answersContainer = document.createElement('div');
-    answersContainer.classList.add('answers-container');
-
-    questionData.answers.forEach((answer, answerIndex) => {
-        const answerButton = document.createElement('button');
-        answerButton.innerHTML = answer;
-        answerButton.classList.add('answer-btn');
-
-        if (selectedAnswers.includes(answerIndex)) {
-            answerButton.classList.add('selected');
-        }
-
-        answerButton.onclick = function () {
-            handleAnswerClick(answerIndex, answerButton);
-        };
-
-        answersContainer.appendChild(answerButton);
-    });
 
     questionElement.appendChild(answersContainer);
     questionContainer.appendChild(questionElement);
 
-    // Container für die Buttons (Reset und Weiter/Auswertung)
-    const buttonContainer = document.createElement('div');
-    buttonContainer.style.display = 'flex';
-    buttonContainer.style.justifyContent = 'center';
-    buttonContainer.style.gap = '10px';
-
-    // Reset-Button (mit richtiger Klasse)
-    const resetButton = document.createElement('button');
-    resetButton.textContent = 'Reset';
-    resetButton.classList.add('reset-btn');
-    resetButton.onclick = function () {
-        if (confirm('Möchten Sie wirklich alles zurücksetzen? Alle Fortschritte gehen verloren.')) {
-            clearProgress(); // Fortschritte löschen und Seite neu laden
-        }
-    };
-
-    buttonContainer.appendChild(resetButton);
-
-    // Weiter/Auswertungs-Button
     const nextButton = document.createElement('button');
-    nextButton.textContent = questionIndex >= categoryQuestions.length - 1 ? 'Auswertung' : 'Weiter';
+    nextButton.textContent = questionIndex >= categoryQuestions.length - 1 ? "Auswertung" : "Weiter";
     nextButton.classList.add('next-btn');
+    nextButton.style.display = 'block';
+    nextButton.style.margin = '10px auto';
+    nextButton.style.padding = '10px 20px';
+    nextButton.style.fontSize = '16px';
+    nextButton.style.cursor = 'pointer';
+    nextButton.style.width = 'auto';
+    nextButton.style.maxWidth = '200px';
+    nextButton.disabled = false; // Weiter-Button ist immer aktiv
     nextButton.onclick = function () {
     if (selectedAnswers.length === 0) {
-        nextButton.disabled = true; // Keine Aktion, wenn keine Auswahl getroffen wurde
+        // Wenn keine Auswahl getroffen wurde, den Button deaktivieren und verhindern, dass weitergegangen wird
+        nextButton.disabled = true;
         return;
-    }
+    } else {
+        const currentQuestionData = categoryQuestions[questionIndex];
+        const correctAnswers = currentQuestionData.correct;
+        const isCorrect = arraysEqualIgnoreOrder(selectedAnswers, correctAnswers);
 
-    // Deaktiviere den Button, sobald er geklickt wurde
-    nextButton.disabled = true;
+        // Deaktiviere die Antwortmöglichkeiten
+        const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
+        answerButtons.forEach(button => {
+            button.disabled = true;
+            button.style.pointerEvents = 'none'; // Deaktiviert Mausereignisse
+        });
 
-    // Fortschritt speichern
-    saveProgress();
+        if (isCorrect) {
+            evaluateAnswers();
+            questionIndex++;
+            selectedAnswers = [];
+            questionContainer.innerHTML = '';
 
-    // Antwort-Buttons deaktivieren während des Feedbacks
-    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
-    answerButtons.forEach(button => {
-        button.disabled = true;
-        button.style.pointerEvents = 'none'; // Mausinteraktionen deaktivieren
-    });
-
-    // Feedback anzeigen (grün oder rot blinken lassen)
-    evaluateAnswers();
-
-    // Nach Feedback: Nächste Frage oder Ergebnis laden
-    setTimeout(() => {
-        questionIndex++;
-        selectedAnswers = [];
-        if (questionIndex >= categoryQuestions.length) {
-            displayScore(); // Ergebnisse anzeigen
-            saveProgress(); // Fortschritt speichern
-            disableCompletedCategories(); // Kategorien deaktivieren
-            if (allCategoriesCompleted()) {
-                showOverallResultButton();
+            if (questionIndex >= categoryQuestions.length) {
+                displayScore();
+                saveProgress();
+                disableCompletedCategories();
+                if (allCategoriesCompleted()) {
+                    showOverallResultButton();
+                }
+            } else {
+                displayQuestion();
             }
         } else {
-            displayQuestion(); // Nächste Frage anzeigen
+            evaluateAnswers();
+            blinkSelectedIncorrectAnswers(correctAnswers);
+
+            // Setze den Button auf "disabled" während des Blinkens
+            nextButton.disabled = true;
+
+            // Warte darauf, dass das Blinken aufhört bevor wir zur nächsten Frage gehen
+            setTimeout(() => {
+                questionIndex++;
+                selectedAnswers = [];
+                questionContainer.innerHTML = '';
+
+                if (questionIndex >= categoryQuestions.length) {
+                    displayScore();
+                    saveProgress();
+                    disableCompletedCategories();
+                    if (allCategoriesCompleted()) {
+                        showOverallResultButton();
+                    }
+                } else {
+                    displayQuestion();
+                }
+            }, 2400);
         }
-    }, 1200); // Wartezeit für Blink-Effekte (Feedback)
+    }
 };
 
-    buttonContainer.appendChild(nextButton);
-
-    questionContainer.appendChild(buttonContainer);
-}
-
-
-function blinkCorrectAnswers(correctIndices) {
-    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
-    
-    answerButtons.forEach((button, index) => {
-        if (correctIndices.includes(index)) {
-            // Nur Text grün blinken
-            const textSpan = button.querySelector('span') || document.createElement('span');
-            textSpan.textContent = button.textContent;
-            textSpan.classList.add('text-blink-correct');
-            button.innerHTML = '';
-            button.appendChild(textSpan);
-        }
-    });
-
-    setTimeout(() => {
-        answerButtons.forEach(button => {
-            // Originaltext wiederherstellen
-            const textSpan = button.querySelector('span');
-            if (textSpan) {
-                button.textContent = textSpan.textContent;
-            }
-        });
-}, BLINK_DURATION); // <--- Verwendet die zentrale Blinkzeit
+    questionContainer.appendChild(nextButton);
 }
 
 function evaluateAnswers() {
     const questionData = categoryQuestions[questionIndex];
     const correctAnswers = questionData.correct;
-
-    // 1. Prüfen, ob die Antworten korrekt sind
     const isCorrect = arraysEqualIgnoreOrder(selectedAnswers, correctAnswers);
 
-    // 2. Interaktionen deaktivieren, um Punkte-Spamming zu verhindern
-    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
-    answerButtons.forEach(button => {
-        button.disabled = true; // Deaktivieren
-        button.style.pointerEvents = 'none'; // Zusätzliche Sicherheitsmaßnahme
-    });
-
-    // 3. Feedback anzeigen (Blinkeffekte für korrekte und falsche Antworten)
     if (isCorrect) {
-        score++; // Punkte nur für 1 richtige Auswahl erhöhen
-        blinkCorrectAnswers(correctAnswers); // Grünes Blinken
+        score++;
     } else {
-        // Falsche Antworten dem Fehlerbericht hinzufügen
+        // Falsche Antwort speichern (auch für Bildfragen)
         fehlerhafteFragen.push({
             frage: questionData.question,
-            falsch: selectedAnswers.map(i => questionData.answers?.[i]),
-            richtig: correctAnswers.map(i => questionData.answers?.[i])
+            falsch: selectedAnswers.map(i => questionData.answers?.[i] || questionData.images?.[i] || "Keine Antwort"),
+            richtig: correctAnswers.map(i => questionData.answers?.[i] || questionData.images?.[i])
         });
-        blinkSelectedIncorrectAnswers(correctAnswers); // Rotes Blinken
     }
 }
 
@@ -3471,80 +3500,70 @@ function displayScore() {
     gradeText.textContent = `Note: ${grade}`;
     scoreContainer.appendChild(gradeText);
 
-    // Füge Fehlerbericht für die aktuelle Kategorie hinzu
-    displayCategoryErrorReport();
+    const medal = calculateMedal(percentage);
+    let medalText = '';
+    if (medal) {
+    if (medal === 'Platin') {
+        medalText = 'Hervorragend! <br>Platin für dich!'; // Anpassung für Platin
+    } else if (medal === 'Gold') {
+        medalText = 'Sehr gut! <br>Gold für dich!';
+    } else if (medal === 'Silber') {
+        medalText = 'Prima! <br>Silber für dich!';
+    } else if (medal === 'Bronze') {
+        medalText = 'Glückwunsch! <br>Bronze für dich!';
+    }
 
-    // Nur wenn alle Kategorien abgeschlossen sind, "Zurück zum Start"-Button anzeigen
-    if (allCategoriesCompleted()) {
-	/*
-        const startButton = document.createElement('button');
-        startButton.textContent = 'Zurück zum Start';
-        startButton.classList.add('start-btn');
-        startButton.onclick = clearProgress; // Funktion zum Zurücksetzen des Fortschritts
-        questionContainer.appendChild(startButton);
-	*/
+    const medalElement = document.createElement('p');
+    medalElement.innerHTML = medalText;
+    medalElement.classList.add('medal-text');
+    medalElement.style.fontSize = '18px';
+    medalElement.style.fontWeight = 'bold';
+    medalElement.style.color = medal === 'Platin' ? '#bfbebb' : // Platin-Farbe
+                               medal === 'Gold' ? '#ffd700' :
+                               medal === 'Silber' ? '#c0c0c0' : '#cd7f32';
 
-        const overallResultButton = document.createElement('button');
-        overallResultButton.textContent = 'Gesamtübersicht';
-        overallResultButton.id = 'overall-result-btn';
-        overallResultButton.className = 'overall-result-btn'; // Existierende CSS-Klasse anwenden
-        overallResultButton.onclick = displayOverallScore;
-        questionContainer.appendChild(overallResultButton);
+    const medalImage = document.createElement('img');
+    medalImage.src = getMedalImage(medal);
+    medalImage.classList.add('medal-image', 'dynamic');
+
+    scoreContainer.appendChild(medalElement);
+    scoreContainer.appendChild(medalImage);
+
+    } else {
+        const missingPoints = pointsNeededForNextMedal(percentage, categoryQuestions.length);
+        const missingPointsText = document.createElement('p');
+        if (missingPoints === 1) {
+            missingPointsText.textContent = `Du hast keine Medaille erhalten. Dir fehlt noch ${missingPoints} richtige Antwort, um eine Medaille zu erhalten.`;
+        } else {
+            missingPointsText.textContent = `Du hast keine Medaille erhalten. Dir fehlen noch ${missingPoints} richtige Antworten, um eine Medaille zu erhalten.`;
+        }
+        scoreContainer.appendChild(missingPointsText);
     }
 
     questionContainer.appendChild(scoreContainer);
-}
 
-function displayCategoryErrorReport() {
-    const questionContainer = document.getElementById('question-container');
-
-    const errorTitle = document.createElement('h2');
-    errorTitle.textContent = `Fehlerbericht für Kategorie ${currentCategory}`;
-    errorTitle.style.textAlign = 'center';
-    questionContainer.appendChild(errorTitle);
-
-    if (fehlerhafteFragen.length === 0) {
-        const noErrorsMessage = document.createElement('p');
-        noErrorsMessage.textContent = "Herzlichen Glückwunsch! Du hast in dieser Kategorie keine Fehler gemacht.";
-        noErrorsMessage.style.textAlign = 'center';
-        questionContainer.appendChild(noErrorsMessage);
-    } else {
-        const errorList = document.createElement('div');
-        errorList.classList.add('error-list');
-
-        fehlerhafteFragen.forEach((eintrag, index) => {
-            const errorItem = document.createElement('div');
-            errorItem.classList.add('feedback-question');
-
-            const questionText = document.createElement('p');
-            questionText.innerHTML = `<strong>Frage ${index + 1}:</strong> ${eintrag.frage}`;
-            errorItem.appendChild(questionText);
-
-            const userAnswerText = document.createElement('p');
-            userAnswerText.innerHTML = `<strong>Deine Antwort:</strong> <span class="wrong-answer">${eintrag.falsch.join(", ")}</span>`;
-            errorItem.appendChild(userAnswerText);
-
-            const correctAnswerText = document.createElement('p');
-            correctAnswerText.innerHTML = `<strong>Richtige Antwort:</strong> <span class="correct-answer">${eintrag.richtig.join(", ")}</span>`;
-            errorItem.appendChild(correctAnswerText);
-
-            errorList.appendChild(errorItem);
-        });
-
-        questionContainer.appendChild(errorList);
+    if (allCategoriesCompleted()) {
+        showOverallResultButton();
+        const startButton = document.createElement('button');
+        startButton.textContent = 'Startseite';
+        startButton.classList.add('start-btn');
+        startButton.onclick = clearProgress; // Funktion beim Klick aufrufen
+        questionContainer.appendChild(startButton);
     }
-
-    // Reset-Button wurde entfernt, da dieser nur in der Gesamtauswertung angezeigt werden soll
 }
 
 function displayOverallScore() {
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = '';
 
+    // Verstecke Kategorie-Schaltflächen
     const categoryContainer = document.getElementById('category-container');
     if (categoryContainer) {
         categoryContainer.style.display = 'none';
     }
+
+    const resultsContainer = document.createElement('div');
+    resultsContainer.classList.add('results-container');
 
     let totalCorrectAnswers = 0;
     let totalQuestions = 0;
@@ -3555,100 +3574,134 @@ function displayOverallScore() {
             const progressData = JSON.parse(savedData);
             totalCorrectAnswers += progressData.score;
             totalQuestions += questions[category].length;
+
+            // Ergebnis für jede Kategorie anzeigen
+            const correctAnswers = progressData.score;
+            const wrongAnswers = questions[category].length - correctAnswers;
+            const percentage = Math.round((correctAnswers / questions[category].length) * 100);
+            const grade = calculateGrade(percentage);
+
+            const categoryResult = document.createElement('div');
+            categoryResult.classList.add('category-result');
+            categoryResult.style.margin = '20px 0';
+            categoryResult.style.border = '2px solid #ccc';
+            categoryResult.style.padding = '15px';
+            categoryResult.style.borderRadius = '10px';
+            categoryResult.style.backgroundColor = '#f9f9f9';
+
+            const scoreTitle = document.createElement('h3');
+            scoreTitle.classList.add('result-title');
+            scoreTitle.textContent = `Ergebnis aus Kategorie ${category}`;
+            categoryResult.appendChild(scoreTitle);
+
+            const chartContainer = document.createElement('div');
+            chartContainer.style.width = '100%';
+            chartContainer.style.maxWidth = '400px';
+            chartContainer.style.margin = 'auto';
+            chartContainer.style.display = 'flex';
+            chartContainer.style.flexDirection = 'column';
+            chartContainer.style.alignItems = 'center';
+
+            if (correctAnswers > 0) {
+                const correctBar = document.createElement('div');
+                correctBar.classList.add('correct-bar');
+                correctBar.style.height = '30px';
+                correctBar.style.width = "50%";
+                correctBar.style.backgroundColor = '#4caf50';
+                correctBar.style.color = 'white';
+                correctBar.style.lineHeight = '30px';
+                correctBar.style.margin = '5px auto';
+                correctBar.style.borderRadius = '10px';
+                correctBar.style.fontSize = '18px';
+                correctBar.textContent = `Richtig: ${correctAnswers}`;
+                chartContainer.appendChild(correctBar);
+            }
+
+            if (wrongAnswers > 0) {
+                const wrongBar = document.createElement('div');
+                wrongBar.classList.add('wrong-bar');
+                wrongBar.style.height = '30px';
+                wrongBar.style.width = "50%";
+                wrongBar.style.backgroundColor = '#f44336';
+                wrongBar.style.color = 'white';
+                wrongBar.style.lineHeight = '30px';
+                wrongBar.style.margin = '5px auto';
+                wrongBar.style.borderRadius = '10px';
+                wrongBar.style.fontSize = '18px';
+                wrongBar.textContent = `Falsch: ${wrongAnswers}`;
+                chartContainer.appendChild(wrongBar);
+            }
+
+            const percentageText = document.createElement('p');
+            percentageText.textContent = `Erfolgsquote: ${percentage}%`;
+            categoryResult.appendChild(chartContainer);
+            categoryResult.appendChild(percentageText);
+
+            const gradeText = document.createElement('p');
+            gradeText.textContent = `Note: ${grade}`;
+            categoryResult.appendChild(gradeText);
+
+            const medal = calculateMedal(percentage);
+            let medalText = '';
+            if (medal) {
+                if (medal === 'Platin') {
+                    medalText = 'Hervorragend! <br>Platin für Dich!';
+                } else if (medal === 'Gold') {
+                    medalText = 'Sehr gut! <br>Gold für Dich!';
+                } else if (medal === 'Silber') {
+                    medalText = 'Prima! <br>Silber für Dich!';
+                } else if (medal === 'Bronze') {
+                    medalText = 'Glückwunsch! <br>Bronze für Dich!';
+                }
+
+                const medalElement = document.createElement('p');
+                medalElement.innerHTML = medalText;
+                medalElement.style.fontSize = '18px';
+                medalElement.style.fontWeight = 'bold';
+                medalElement.style.color = medal === 'Platin' ? '#bfbebb' : // Farbe für Platin
+                                          medal === 'Gold' ? '#ffd700' : // Farbe für Gold
+                                          medal === 'Silber' ? '#c0c0c0' : '#cd7f32'; // Bronze
+
+                const medalImage = document.createElement('img');
+                medalImage.src = getMedalImage(medal);
+                medalImage.classList.add('medal-image');
+                categoryResult.appendChild(medalElement);
+                categoryResult.appendChild(medalImage);
+            } else {
+                const missingPoints = pointsNeededForNextMedal(percentage, questions[category].length);
+                const missingPointsText = document.createElement('p');
+                if (missingPoints === 1) {
+                    missingPointsText.textContent = `Du hast keine Medaille erhalten. Dir fehlt noch ${missingPoints} richtige Antwort, um eine Medaille zu erhalten.`;
+                } else {
+                    missingPointsText.textContent = `Du hast keine Medaille erhalten. Dir fehlen noch ${missingPoints} richtige Antworten, um eine Medaille zu erhalten.`;
+                }
+                categoryResult.appendChild(missingPointsText);
+            }
+
+            resultsContainer.appendChild(categoryResult);
         }
     });
 
-    const percentage = Math.round((totalCorrectAnswers / totalQuestions) * 100);
-    const grade = calculateGrade(percentage);
-    const medal = calculateMedal(percentage);
+    questionContainer.appendChild(resultsContainer);
 
-    const finalScoreContainer = document.createElement('div');
-    finalScoreContainer.id = 'final-score-container';
-    finalScoreContainer.style.margin = '30px auto';
-    finalScoreContainer.style.padding = '20px';
-    finalScoreContainer.style.backgroundColor = '#f0f8ff';
-    finalScoreContainer.style.border = '2px solid #ccc';
-    finalScoreContainer.style.borderRadius = '10px';
-    finalScoreContainer.style.textAlign = 'center';
+    const feedbackButton = document.createElement("button");
+    feedbackButton.textContent = "Fehlerbericht";
+    feedbackButton.classList.add("start-btn");
+    feedbackButton.onclick = displayErrorReport; // Funktion zum Anzeigen des Fehlerberichts aufrufen
+    questionContainer.appendChild(feedbackButton);
 
-    const title = document.createElement('h3');
-    title.textContent = 'Gesamtergebnis aus allen Kategorien';
-    finalScoreContainer.appendChild(title);
-
-    const summaryText = document.createElement('p');
-    summaryText.textContent = `Erfolgsquote: ${percentage}% | Note: ${grade}`;
-    finalScoreContainer.appendChild(summaryText);
-
-    // Sound-Logik (nur bei Platin) - OHNE AUTOPLAY
-    if (medal === 'Platin') {
-        const platinSound = new Audio('Plopp.mp3');
-        
-        // Sound-Button
-        const soundButton = document.createElement('button');
-        soundButton.textContent = '🎉 Sound abspielen';
-        soundButton.className = 'sound-btn';
-        soundButton.onclick = () => {
-            platinSound.currentTime = 0; // Zurücksetzen
-            platinSound.play().catch(e => console.log("Sound-Fehler:", e));
-        };
-        finalScoreContainer.appendChild(soundButton);
-    }
-
-    if (medal) {
-        const medalText = document.createElement('p');
-        if (medal === 'Platin') {
-            medalText.innerHTML = 'Hervorragend! <br>Alles richtig!';
-            medalText.style.color = '#d1567d';
-        } else if (medal === 'Gold') {
-            medalText.textContent = 'Sehr gut! Gold für Dich!';
-            medalText.style.color = '#ffd700';
-        } else if (medal === 'Silber') {
-            medalText.textContent = 'Prima! Silber für Dich!';
-            medalText.style.color = '#c0c0c0';
-        } else if (medal === 'Bronze') {
-            medalText.textContent = 'Glückwunsch! Bronze für Dich!';
-            medalText.style.color = '#cd7f32';
-        }
-        medalText.style.fontSize = '18px';
-        medalText.style.fontWeight = 'bold';
-        finalScoreContainer.appendChild(medalText);
-
-        const medalImage = document.createElement('img');
-        medalImage.src = getMedalImage(medal);
-        medalImage.classList.add('medal-image', 'dynamic');
-        finalScoreContainer.appendChild(medalImage);
-    } else {
-        const missingPoints = pointsNeededForNextMedal(percentage, totalQuestions);
-        const missingPointsText = document.createElement('p');
-        missingPointsText.textContent = `Dir fehlen noch ${missingPoints} richtige Antworten, um eine Medaille zu erhalten.`;
-        finalScoreContainer.appendChild(missingPointsText);
-    }
-
-    questionContainer.appendChild(finalScoreContainer);
-
-    // Zurück-zum-Start-Button
-    const resetButton = document.createElement('button');
-    resetButton.textContent = 'Zurück zum Start';
-    resetButton.classList.add('reset-btn');
-    resetButton.style.marginTop = '20px';
-    resetButton.style.display = 'block';
-    resetButton.style.margin = '10px auto';
-    resetButton.style.padding = '10px 20px';
-    resetButton.style.fontSize = '16px';
-    resetButton.onclick = clearProgress;
-    questionContainer.appendChild(resetButton);
+    // Zeige die Gesamtbewertung an
+    displayFinalOverallScore();
 }
 
 function showOverallResultButton() {
     const questionContainer = document.getElementById('question-container');
     if (!document.getElementById('overall-result-btn')) {
         const overallResultButton = document.createElement('button');
-        overallResultButton.textContent = 'Gesamtübersicht';
+        overallResultButton.textContent = 'Gesamtergebnis';
         overallResultButton.id = 'overall-result-btn';
-        overallResultButton.className = 'overall-result-btn'; // Existierende CSS-Klasse anwenden
-        overallResultButton.onclick = function() {
-            displayOverallScore();
-        };
+        overallResultButton.classList.add('overall-result-btn'); // Klasse hinzufügen
+        overallResultButton.onclick = displayOverallScore;
         questionContainer.appendChild(overallResultButton);
     }
 }
@@ -3672,22 +3725,11 @@ function shuffleCategories() {
 }
 
 function checkAllCategoriesCompleted() {
-    const allCompleted = allCategoriesCompleted(); // Überprüfen, ob alle Kategorien abgeschlossen sind
-
+    let allCompleted = allCategoriesCompleted();
     if (allCompleted) {
-        // "Gesamtübersicht"-Button hinzufügen
-        const categoryContainer = document.getElementById('category-container');
-        if (!document.getElementById('overall-result-btn')) { // Nur hinzufügen, wenn der Button fehlt
-            const overallResultButton = document.createElement('button');
-            overallResultButton.textContent = 'Gesamtübersicht';
-            overallResultButton.id = 'overall-result-btn';
-            overallResultButton.classList.add('overall-result-btn'); // Optional für Styling
-            overallResultButton.onclick = displayOverallScore; // Führt zur Gesamtübersicht
-            categoryContainer.appendChild(overallResultButton);
-        }
+        showResetButton();
     }
-
-    disableCompletedCategories(); // Deaktive abgeschlossene Kategorien
+    disableCompletedCategories();
 }
 
 function confirmCategorySwitch(newCategory) {
@@ -3723,41 +3765,52 @@ function clearProgress() {
     location.reload();
 }
 
-function renderErrorReport(targetElement = document.body) {
-    targetElement.innerHTML = ''; // Inhalt löschen
+function displayErrorReport() {
+    const questionContainer = document.getElementById('question-container');
+    questionContainer.innerHTML = ''; // Vorherigen Inhalt löschen
 
-    const title = document.createElement("h2");
-    title.textContent = "Fehlerbericht";
-    title.style.textAlign = "center";
-    targetElement.appendChild(title);
+    const errorTitle = document.createElement('h2');
+    errorTitle.textContent = 'Fehlerbericht';
+    errorTitle.style.textAlign = 'center';
+    questionContainer.appendChild(errorTitle);
 
     if (fehlerhafteFragen.length === 0) {
-        const noErrors = document.createElement("p");
-        noErrors.textContent = "Herzlichen Glückwunsch! Du hast keine Fehler gemacht.";
-        noErrors.style.textAlign = "center";
-        targetElement.appendChild(noErrors);
+        const noErrorsMessage = document.createElement('p');
+        noErrorsMessage.textContent = "Herzlichen Glückwunsch! Du hast keine Fehler gemacht.";
+        noErrorsMessage.style.textAlign = 'center';
+        questionContainer.appendChild(noErrorsMessage);
     } else {
-        const errorList = document.createElement("ul");
+        const errorList = document.createElement('div');
+        errorList.classList.add('error-list');
 
         fehlerhafteFragen.forEach((eintrag, index) => {
-            const errorItem = document.createElement("li");
+            const errorItem = document.createElement('div');
+            errorItem.classList.add('feedback-question');
 
-            errorItem.innerHTML = `
-                <strong>${index + 1}. ${eintrag.frage}</strong><br>
-                Deine Antwort: <span style="color: red;">${eintrag.falsch}</span><br>
-                Richtige Antwort: <span style="color: green;">${eintrag.richtig}</span>
-            `;
+            const questionText = document.createElement('p');
+            questionText.innerHTML = `<strong>Frage ${index + 1}:</strong> ${eintrag.frage}`;
+            errorItem.appendChild(questionText);
+
+            const userAnswerText = document.createElement('p');
+            userAnswerText.innerHTML = `<strong>Deine Antwort:</strong> <span class="wrong-answer">${eintrag.falsch.join(", ")}</span>`;
+            errorItem.appendChild(userAnswerText);
+
+            const correctAnswerText = document.createElement('p');
+            correctAnswerText.innerHTML = `<strong>Richtige Antwort:</strong> <span class="correct-answer">${eintrag.richtig.join(", ")}</span>`;
+            errorItem.appendChild(correctAnswerText);
 
             errorList.appendChild(errorItem);
         });
 
-        targetElement.appendChild(errorList);
+        questionContainer.appendChild(errorList);
     }
 
-    const backButton = document.createElement("button");
-    backButton.textContent = "Zurück zum Start";
-    backButton.onclick = clearProgress;
-    targetElement.appendChild(backButton);
+    // Zurück-zum-Start Button
+    const resetButton = document.createElement('button');
+    resetButton.textContent = 'Zurück zum Start';
+    resetButton.classList.add('reset-btn');
+    resetButton.onclick = clearProgress;
+    questionContainer.appendChild(resetButton);
 }
 
 
@@ -3771,31 +3824,98 @@ function speichereFehlversuch(frage, ausgewaehlteAntwort, richtigeAntwort) {
     });
 }
 
+function zeigeFehlerbericht() {
+    let berichtContainer = document.createElement("div");
+    berichtContainer.innerHTML = "<h2>Fehlerbericht</h2>";
+
+    fehlerhafteFragen.forEach((eintrag, index) => {
+        let frageElement = document.createElement("p");
+        frageElement.innerHTML = `<strong>${index + 1}. ${eintrag.frage}</strong>`;
+
+        let falschElement = document.createElement("p");
+        falschElement.innerHTML = `Deine Antwort: <span style="color: red;">${eintrag.falsch}</span>`;
+
+        let richtigElement = document.createElement("p");
+        richtigElement.innerHTML = `Richtige Antwort: <span style="color: green;">${eintrag.richtig}</span>`;
+
+        berichtContainer.appendChild(frageElement);
+        berichtContainer.appendChild(falschElement);
+        berichtContainer.appendChild(richtigElement);
+        berichtContainer.appendChild(document.createElement("hr"));
+    });
+
+    document.body.innerHTML = ""; // Alles vorherige löschen
+    document.body.appendChild(berichtContainer);
+
+    let zurueckButton = document.createElement("button");
+    zurueckButton.textContent = "Zurück zum Start";
+    zurueckButton.addEventListener("click", () => location.reload());
+    document.body.appendChild(zurueckButton);
+}
 
 
-
-
-function blinkSelectedIncorrectAnswers(correctAnswers) {
-    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
-
-    answerButtons.forEach((button, index) => {
-        // Nur Text rot blinken lassen (kein Rahmen!)
-        const textSpan = button.querySelector('span') || document.createElement('span');
-        textSpan.textContent = button.textContent;
-        textSpan.classList.add('text-blink-wrong');
-        button.innerHTML = '';
-        button.appendChild(textSpan);
+function blinkAllImages() {
+    const answerButtons = document.querySelectorAll('.answer-img');
+    answerButtons.forEach(button => {
+        button.classList.add('blinking', 'image-incorrect');
     });
 
     setTimeout(() => {
         answerButtons.forEach(button => {
-            // Originaltext wiederherstellen
-            const textSpan = button.querySelector('span');
-            if (textSpan) {
-                button.textContent = textSpan.textContent;
-            }
+            button.classList.remove('blinking', 'image-incorrect');
         });
-}, BLINK_DURATION); // <--- Verwendet die zentrale Blinkzeit
+        // Re-enable the "Weiter" button after blinking
+        const nextButton = document.querySelector('.next-btn');
+        if (nextButton) {
+            nextButton.disabled = false;
+        }
+    }, 4000);
+}
+
+function blinkAllAnswers() {
+    const nextButton = document.querySelector('.next-btn');
+    if (nextButton) {
+        nextButton.disabled = true;
+    }
+    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
+    const imageButtons = document.querySelectorAll('.answer-img');
+
+    if (imageButtons.length > 0) {
+        blinkAllImages();
+    } else {
+        answerButtons.forEach(button => {
+            button.classList.add('blinking');
+        });
+        setTimeout(() => {
+            answerButtons.forEach(button => {
+                button.classList.remove('blinking');
+            });
+            if (nextButton) {
+                nextButton.disabled = false;
+            }
+        }, 4000);
+    }
+}
+
+function blinkSelectedIncorrectAnswers(correctAnswers) {
+    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
+    selectedAnswers.forEach(selectedIndex => {
+        if (!correctAnswers.includes(selectedIndex)) {
+            const button = answerButtons[selectedIndex];
+            button.classList.add('blinking', 'image-incorrect');
+        }
+    });
+
+    setTimeout(() => {
+        answerButtons.forEach(button => {
+            button.classList.remove('blinking', 'image-incorrect');
+        });
+        // Re-enable the "Weiter" button after blinking
+        const nextButton = document.querySelector('.next-btn');
+        if (nextButton) {
+            nextButton.disabled = false;
+        }
+    }, 4000);
 }
 
 function displayFinalOverallScore() {
@@ -3838,75 +3958,37 @@ function displayFinalOverallScore() {
     if (medal) {
         const medalText = document.createElement('p');
         if (medal === 'Platin') {
-            medalText.innerHTML = 'HERVORRAGEND! Du hast ALLES richtig beantwortet!';
-            medalText.style.color = '#4CAF50'; // Grün für hervorragende Leistung
-            medalText.style.fontSize = '18px';
-            medalText.style.fontWeight = 'bold';
-            finalScoreContainer.appendChild(medalText);
-
-            // Daumen hoch Bild
-            const medalImage = document.createElement('img');
-            medalImage.src = 'Daumen.jpg'; // Daumen-Bild, sicherstellen, dass dieses Bild existiert
-            medalImage.className = 'medal-image';
-            finalScoreContainer.appendChild(medalImage);
-
-            // Musik: Audio-Element einfügen
-            const audio = document.createElement('audio');
-            audio.src = 'belohnung.mp3'; // Der relative Pfad zur Audiodatei
-            audio.type = 'audio/mpeg'; // Dateityp
-            audio.autoplay = true; // Startet die Musik automatisch
-            finalScoreContainer.appendChild(audio); // Audio in den DOM einfügen
+            medalText.innerHTML = 'Hervorragend! <br>Platin für dich!';
+            medalText.style.color = '#E5E4E2'; // Schriftfarbe für Platin
         } else if (medal === 'Gold') {
-            medalText.textContent = 'Sehr gut! Du hast Gold!';
-            medalText.style.color = '#FFD700'; // Gold-Farbe
-            finalScoreContainer.appendChild(medalText);
-            const medalImage = document.createElement('img');
-            medalImage.src = getMedalImage(medal); // Bildpfad dynamisch aufrufen
-            medalImage.className = 'medal-image';
-            finalScoreContainer.appendChild(medalImage);
+            medalText.textContent = 'Sehr gut! Gold für Dich!';
+            medalText.style.color = '#ffd700'; // Schriftfarbe für Gold
         } else if (medal === 'Silber') {
-            medalText.textContent = 'Gut! Du hast Silber!';
-            medalText.style.color = '#C0C0C0'; // Silber-Farbe
-            finalScoreContainer.appendChild(medalText);
-            const medalImage = document.createElement('img');
-            medalImage.src = getMedalImage(medal); // Bildpfad dynamisch aufrufen
-            medalImage.className = 'medal-image';
-            finalScoreContainer.appendChild(medalImage);
+            medalText.textContent = 'Prima! Silber für Dich!';
+            medalText.style.color = '#c0c0c0'; // Schriftfarbe für Silber
         } else if (medal === 'Bronze') {
-            medalText.textContent = 'Gut! Du hast Bronze!';
-            medalText.style.color = '#CD7F32'; // Bronze-Farbe
-            finalScoreContainer.appendChild(medalText);
-            const medalImage = document.createElement('img');
-            medalImage.src = getMedalImage(medal); // Bildpfad dynamisch aufrufen
-            medalImage.className = 'medal-image';
-            finalScoreContainer.appendChild(medalImage);
+            medalText.textContent = 'Glückwunsch! Bronze für Dich!';
+            medalText.style.color = '#cd7f32'; // Schriftfarbe für Bronze
         }
+        medalText.style.fontSize = '18px';
+        medalText.style.fontWeight = 'bold';
+        finalScoreContainer.appendChild(medalText);
+
+        const medalImage = document.createElement('img');
+        medalImage.src = getMedalImage(medal);
+        medalImage.classList.add('medal-image', 'dynamic');
+        finalScoreContainer.appendChild(medalImage);
     } else {
         const missingPoints = pointsNeededForNextMedal(percentage, totalQuestions);
         const missingPointsText = document.createElement('p');
-        missingPointsText.textContent = `Dir fehlen noch ${missingPoints} richtige Antworten, um eine Medaille zu erhalten.`;
+        missingPointsText.textContent = `Du hast keine Medaille erhalten. Dir fehlen noch ${missingPoints} richtige Antworten, um eine Medaille zu erhalten.`;
         finalScoreContainer.appendChild(missingPointsText);
     }
 
     questionContainer.appendChild(finalScoreContainer);
-
-    // "Zurück zum Start"-Button
-    const resetButton = document.createElement('button');
-    resetButton.textContent = 'Zurück zum Start';
-    resetButton.onclick = clearProgress; 
-    questionContainer.appendChild(resetButton); 
 }
 
-window.onload = function () {
-    loadCategories(); // Kategorien laden
-    checkAllCategoriesCompleted(); // Überprüfung: Sind alle Kategorien abgeschlossen?
-
-    // Fortschritt der aktuellen Kategorie wiederherstellen
-    if (currentCategory) {
-        const progress = loadProgress(currentCategory);
-        questionIndex = progress.questionIndex;
-        score = progress.score;
-        selectedAnswers = progress.selectedAnswers || [];
-        displayQuestion(); // Zeigt die letzte Frage
-    }
+window.onload = function() {
+    localStorage.clear();
+    loadCategories();
 };
