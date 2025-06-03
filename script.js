@@ -2631,7 +2631,7 @@ const questions = {
 "Betriebsmittel 5": [
     {
         "type": "textWithImage",
-        "question": "Auf welchem Prinzip berüht die Drehrichtungsumkehr für Links- oder Rechtslauf ?",
+        "question": "Auf welchem Prinzip beruht die Drehrichtungsumkehr für Links- oder Rechtslauf ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Mit Hilfe mechanischer Umpolung des Getriebes", "Durch Vertauschen zweier Phasen mit Schützen", "Durch Vertauschen von drei Phasen mit Schützen"],
         "correct": [1]
