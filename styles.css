@@ -656,6 +656,7 @@ img {
 }
 
 img[src="Titelbild.jpg"] {
-    width: 250px;   /* Bildbreite auf 250 Pixel begrenzen */
-    height: auto;   /* Höhe proportional anpassen */
+    width: 100%;      /* Bild nimmt die volle Breite des übergeordneten Containers ein */
+    height: auto;     /* Höhe proportional anpassen */
+    max-width: 300px; /* Maximale Breite des Bildes auf 300px begrenzen */
 }
