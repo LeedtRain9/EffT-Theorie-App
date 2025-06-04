@@ -11,7 +11,7 @@ const questions = {
     },
     {
         type: "textWithImage",
-        question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich?",
+        question: "Welche Ladungsart ist für den Stromfluss in metallischen Leitern verantwortlich?",
         image: ["Bilder Elektrotechnik 1/bild2.jpg"],
         answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"],
         correct: [1]
@@ -91,7 +91,7 @@ const questions = {
 
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat der elektrische Widerstand R?",
+        question: "Welchen Formelbuchstaben hat der elektrische Widerstand?",
         image: "Bilder Elektrotechnik 1/bild7a.jpg",
         answers: ["P", "A", "R", "VA"],
         correct: [2]
@@ -112,7 +112,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Um welche Bauteile handelt es sich im Vordergrund?",
+        "question": "Um welche Bauteile handelt es sich hier im Vordergrund?",
         "image": "Bilder Elektrotechnik 2/bild2.jpg",
         "answers": ["Ohmsche Widerstände", "Wirkwiderstände", "Kapazitive Widerstände", "Induktive Widerstände"],
         "correct": [0]
@@ -147,7 +147,7 @@ const questions = {
     },
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat die elektrische Arbeit W?",
+        question: "Welchen Formelbuchstaben hat die elektrische Arbeit?",
         image: "Bilder Querbeet/bild4.jpg",       
         answers: ["Nm", "Ws", "W", "F"],
         correct: [2]
@@ -249,7 +249,7 @@ const questions = {
     },
     {
         type: "textWithImage",
-        question: "Welche zwei Leistungsarten im Wechselstromkreis gibt es neben der Wirkleistung P im Wechselstromkreis noch?",
+        question: "Welche zwei Leistungsarten im Wechselstromkreis gibt es neben der Wirkleistung P noch?",
         image: "Bilder Elektrotechnik 3/bild4.jpg",
         answers: ["Blindleistung", "Nulleistung", "Scheinleistung", "Kaltleistung"],
         correct: [0, 2]
@@ -276,21 +276,21 @@ const questions = {
 
  {
         type: "textWithImage",
-        question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom und Spannung im Wechselstromkreis?",
+        question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom I und Spannung U im Wechselstromkreis?",
         image: "Bilder Querbeet/bild5.jpg",       
         answers: ["Widerstand R", "Kondensator C", "Potentiometer R", "Spule L"],
         correct: [1, 3]
     },
     {
         type: "textWithImage",
-        question: "Wie wird eine Spule/Wicklung allgemein noch bezeichnet?",
+        question: "Wie lautet die pysikalische Bezeichnung von Spulen/wicklungen?",
         image: "Bilder Elektrotechnik 4/bild1.jpg",
         answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permitivität µ"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Wie wird ein Kondensator/Ladungsspeicher allgemein noch bezeichnet?",
+        question: "Wie lautet die pysikalische Bezeichnung von Kondensatoren/Ladungsspeichern?",
         image: "Bilder Elektrotechnik 4/bild2.jpg",
         answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permittivität µ"],
         correct: [0]
