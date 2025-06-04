@@ -4,83 +4,83 @@ const questions = {
 "Elektrotechnik 1":[
     {
         type: "textWithImage",
-        question: "Wie ist das Elektron geladen ?",
+        question: "Wie ist das Elektron geladen?",
         image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
         answers: ["positiv", "gar nicht", "neutral", "negativ"],
         correct: [3]
     },
     {
         type: "textWithImage",
-        question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich ?",
+        question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich?",
         image: ["Bilder Elektrotechnik 1/bild2.jpg"],
         answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Was ist die treibende Kraft in einem Stromkreis ?",
+        question: "Was ist die treibende Kraft in einem Stromkreis?",
         image: ["Bilder Elektrotechnik 1/bild5.jpg"],
         answers: ["Die Leistung P", "Die Ladung Q", "Der Widerstand R", "Die Spannung U"],
         correct: [3]
     },
     {
         type: "textWithImage",
-        question: "Welche Aussagen sind richtig ?",
+        question: "Welche Aussagen sind richtig?",
         image: ["Bilder Querbeet/bild5.jpg"],
         answers: ["Eine Spannung liegt an einem Widerstand an", "Ein Strom liegt an einem Widerstand an", "Ein Strom ließt an einem Widerstand an", "Ein Strom fließt durch einen Widerstand durch"], correct: [0, 3]
     },
     {
         type: "textWithImage",
-        question: "Aus welchen drei grundlegenden Elementen besteht ein Stromkreis ?",
+        question: "Aus welchen drei grundlegenden Elementen besteht ein Stromkreis?",
         image: "Bilder Elektrotechnik 1/bild9.jpg",
         answers: ["Spannungsquelle", "Leiter", "Stromzähler", "Verbraucher"],
         correct: [0, 1, 3]
     },
     {
         type: "textWithImage",
-        question: "Für welche Spannungsart gilt die Abkürzung AC ?",
+        question: "Für welche Spannungsart gilt die Abkürzung AC?",
         image: "Bilder Elektrotechnik 1/bild10.jpg",
         answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Liegt hier ein AC- oder DC-System vor ?",
+        question: "Liegt hier ein AC- oder DC-System vor?",
         image: "Bilder Elektrotechnik 3/bild5.jpg",
         answers: ["Ein DC-System", "Ein AC-System"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Welche Ladung besitzt das Neutron ?",
+        question: "Welche Ladung besitzt das Neutron?",
         image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
-        answers: ["eine positive", "eine neutrale", "mehr positive als negative", "negativ"],
+        answers: ["eine positive", "eine neutrale", "mehr positive als negative", "eine negative"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Für welche Spannungsart gilt die Abkürzung DC ?",
+        question: "Für welche Spannungsart gilt die Abkürzung DC?",
         image: "Bilder Elektrotechnik 1/bild11.jpg",
         answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat der elektrische Strom ?",
+        question: "Welchen Formelbuchstaben hat der elektrische Strom?",
         image: ["Bilder Elektrotechnik 1/bild7a.jpg"],
         answers: ["R", "U", "A", "I"],
         correct: [3]
     },
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat die elektrische Spannung ?",
+        question: "Welchen Formelbuchstaben hat die elektrische Spannung?",
         image: ["Bilder Elektrotechnik 1/bild7a.jpg"],
         answers: ["I", "U", "Ws", "Nm"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Wie ist das Proton geladen ?",
+        question: "Wie ist das Proton geladen?",
         image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
         answers: ["positiv", "gar nicht", "neutral", "negativ"],
         correct: [0]
@@ -91,84 +91,84 @@ const questions = {
 
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat der elektrische Widerstand ?",
+        question: "Welchen Formelbuchstaben hat der elektrische Widerstand R?",
         image: "Bilder Elektrotechnik 1/bild7a.jpg",
         answers: ["P", "A", "R", "VA"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Wie bezeichnet man den Widerstand R im Gleichstromkreis ?",
+        question: "Wie bezeichnet man den Widerstand R im Gleichstromkreis?",
         image: "Bilder Elektrotechnik 2/bild1.jpg",        
         answers: ["Gleichstromwiderstand", "Blindwiderstand", "Kaltwiderstand", "Heißwiderstand"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Wie nennt man den Widerstand R im Wechselstromkreis ?",
+        question: "Wie nennt man den Widerstand R im Wechselstromkreis?",
         image: "Bilder Querbeet/bild5.jpg",        
         answers: ["Scheinwiderstand", "Blindwiderstand", "Wirkwiderstand", "Hellwiderstand"],
         correct: [2]
     },
     {
         "type": "textWithImage",
-        "question": "Um welche Bauteile handelt es sich im Vordergrund ?",
+        "question": "Um welche Bauteile handelt es sich im Vordergrund?",
         "image": "Bilder Elektrotechnik 2/bild2.jpg",
         "answers": ["Ohmsche Widerstände", "Wirkwiderstände", "Kapazitive Widerstände", "Induktive Widerstände"],
-        "correct": [0, 1]
+        "correct": [0]
     },
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat die elektrische Leistung im Gleichstromkreis ?",
+        question: "Welchen Formelbuchstaben hat die elektrische Leistung P im Gleichstromkreis?",
         image: "Bilder Elektrotechnik 1/bild8a.jpg",        
         answers: ["P", "C", "L", "W"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Mit welchen Formeln lässt sich die Leistung im DC-System berechnen ?",
+        question: "Mit welcher Formel lässt sich die Leistung P im DC-System berechnen?",
         image: "Bilder Elektrotechnik 1/bild8a.jpg",        
         answers: ["P = U * I", "P = R / I", "U = R * I", "I = U / R"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Wie bezeichnet man die Leistung P im Gleichstromkreis ?",
+        question: "Wie bezeichnet man die Leistung P im Gleichstromkreis?",
         image: "Bilder Querbeet/bild5.jpg",        
         answers: ["Widerstandsleistung", "Momentanleistung", "Gleichstromleistung", "Spitzenleistung"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Welche Einheit hat die elektrische Leistung im DC-System ?",
+        question: "Welche Einheit hat die elektrische Leistung P im DC-System?",
         image: "Bilder Elektrotechnik 1/bild8a.jpg",        
         answers: ["I", "U", "W", "R"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat die elektrische Arbeit ?",
+        question: "Welchen Formelbuchstaben hat die elektrische Arbeit W?",
         image: "Bilder Querbeet/bild4.jpg",       
         answers: ["Nm", "Ws", "W", "F"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Welche Einheit hat die elektrische Spannung ?",
+        question: "Welche Einheit hat die elektrische Spannung U?",
         image: "Bilder Elektrotechnik 1/bild3a.jpg",        
         answers: ["I", "U", "Ws", "V"],
         correct: [3]
     },
     {
         type: "textWithImage",
-        question: "Welche Einheit hat der elektrische Strom ?",
+        question: "Welche Einheit hat der elektrische Strom I?",
         image: "Bilder Elektrotechnik 1/bild3a.jpg",        
         answers: ["A", "U", "W", "I"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Wieviel Ampere entsprechen 500 mA ?",
+        question: "Wieviel Ampere entsprechen 500 mA?",
         image: "Bilder Querbeet/bild5.jpg",        
         answers: ["5", "0,5", "0,05", "50"],
         correct: [1]
@@ -179,91 +179,91 @@ const questions = {
     
 {
         type: "textWithImage",
-        question: "Welche Einheit hat der elektrische Widerstand R ?",
+        question: "Welche Einheit hat der elektrische Widerstand R?",
         image: "Bilder Elektrotechnik 1/bild3a.jpg",        
         answers: ["W", "VA", "J", "Ohm"],
         correct: [3]
     },
     {
         type: "textWithImage",
-        question: "Ein Widerstand hat den Wert 1 kOhm. Wie viel Ohm sind das ?",
+        question: "Ein Widerstand hat den Wert 1 kOhm. Wie lautet der Wert in Ohm?",
         image: "Bilder Elektrotechnik 3/bild1.jpg",
         answers: ["0,001", "100", "1000", "0,1"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Welche Formeln geben das Ohmsche Gesetz wieder ?",
+        question: "Welche Formeln geben das Ohmsche Gesetz wieder?",
         image: "Bilder Querbeet/bild5.jpg",        
         answers: ["R = I / U", "U = R / I", "U = R * I", "I = U / R"],
         correct: [2, 3]
     },
     {
         type: "textWithImage",
-        question: "Ein Widerstand von 100 Ohm liegt an 60 V. Wie groß ist der Strom ?",
+        question: "Ein Widerstand von 100 Ohm liegt an 60 V. Wie groß ist der Strom?",
         image: "Bilder Elektrotechnik 3/bild1.jpg",
         answers: ["6,0 A", "0,6 A", "600 mA", "6 mA"],
         correct: [1, 2]
     },
     {
         type: "textWithImage",
-        question: "Eine Heizwendel (U = 230 V) hat einen Widerstandswert von 22 Ω. Würde eine 16 A-Sicherung zur Absicherung ausreichen, wenn nur die Höhe des Betriebsstromes betrachtet wird ?",
+        question: "Eine Heizwendel (U = 230 V) hat einen Widerstandswert von 22 Ω. Würde eine 16 A-Sicherung zur Absicherung ausreichen, wenn nur die Höhe des Betriebsstromes betrachtet wird?",
         image: "Bilder Elektrotechnik 3/bild6.jpg",
         answers: ["Nein", "Ja"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Durch einen Widerstand von 150 Ohm fließen 70 mA. Wie groß ist die angelegte Spannung ?",
+        question: "Durch einen Widerstand von 150 Ohm fließen 70 mA. Wie groß ist die angelegte Spannung U?",
         image: "Bilder Elektrotechnik 3/bild1.jpg",
         answers: ["1,5 V", "100,5 V", "10,5 V", "10500 mV"],
         correct: [2, 3]
     },
     {
         type: "textWithImage",
-        question: "Wie groß ist P bei 230 V und 6 A ?",
+        question: "Wie groß ist P bei 230 V und 6 A?",
         image: "Bilder Elektrotechnik 3/bild1.jpg",
         answers: ["1,380 W", "1380 Ws", "1380 W", "1,38 kW"],
         correct: [2, 3]
     },
     {
         type: "textWithImage",
-        question: "Wie nennt man das Verhältnis zwischen mechanischer zur elektrischen Leistung ?",
+        question: "Wie nennt man das Verhältnis zwischen mechanischer zur elektrischen Leistung P?",
         image: "Bilder Elektrotechnik 3/bild2.jpg",
         answers: ["Wirkungsgrad", "Wirtschaftsgrad", "Windungsgrad", "Wellengrad"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Welche zwei Widerstandsarten gibt es neben dem Wirkwiderstand im Wechselstromkreis noch ?",
+        question: "Welche zwei Widerstandsarten gibt es neben dem Wirkwiderstand im Wechselstromkreis noch?",
         image: "Bilder Elektrotechnik 3/bild3.jpg",
         answers: ["Warmwiderstand", "Blindwiderstand", "Scheinwiderstand", "Reibwiderstand"],
         correct: [1, 2]
     },
 {
         type: "textWithImage",
-        question: "Welche Aussage zum Wirkungsgrad z.B. eines Drehstrommotors ist richtig ?",
+        question: "Welche Aussage zum Wirkungsgrad z.B. eines Drehstrommotors ist richtig?",
         image: "Bilder Elektrotechnik 3/bild2.jpg",        
-        answers: ["Er ist immer 1", "Er ist kleiner 1", "Er kann sogar großer 1 sein"],
+        answers: ["Dieser ist immer 1", "Dieser ist kleiner 1", "Dieser kann sogar großer 1 sein"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Welche zwei Leistungsarten gibt es neben der Wirkleistung im Wechselstromkreis noch ?",
+        question: "Welche zwei Leistungsarten im Wechselstromkreis gibt es neben der Wirkleistung P im Wechselstromkreis noch?",
         image: "Bilder Elektrotechnik 3/bild4.jpg",
         answers: ["Blindleistung", "Nulleistung", "Scheinleistung", "Kaltleistung"],
         correct: [0, 2]
     },
     {
         type: "textWithImage",
-        question: "Welche Einheit hat der Wirkungsgrad ?",
+        question: "Welche Einheit hat der Wirkungsgrad?",
         image: "Bilder Elektrotechnik 3/bild2.jpg",        
         answers: ["Nm", "W", "keine", "kWh"],
         correct: [2]
     },
           {
   	"type": "textWithImage",
-  	"question": "Ein 100-W-Glühlampe läuft 10 Stunden. Wie viel Energie verbraucht sie in kWh?",
+  	"question": "Eine 100-W-Glühlampe leuchtet 10 Stunden. Wie hoch ist die elektrische Arbeit W?",
   	"image": "Bilder Elektrotechnik 3/bild7.jpg",
   	"answers": ["0,1 kWh", "1 kWh", "10 kWh", "100 kWh"],
  	"correct": [1]
@@ -276,28 +276,28 @@ const questions = {
 
  {
         type: "textWithImage",
-        question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom und Spannung im Wechselstromkreis ?",
+        question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom und Spannung im Wechselstromkreis?",
         image: "Bilder Querbeet/bild5.jpg",       
         answers: ["Widerstand R", "Kondensator C", "Potentiometer R", "Spule L"],
         correct: [1, 3]
     },
     {
         type: "textWithImage",
-        question: "Wie wird eine Spule/Wicklung allgemein noch bezeichnet ?",
+        question: "Wie wird eine Spule/Wicklung allgemein noch bezeichnet?",
         image: "Bilder Elektrotechnik 4/bild1.jpg",
         answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permitivität µ"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Wie wird ein Kondensator/Ladungsspeicher allgemein noch bezeichnet ?",
+        question: "Wie wird ein Kondensator/Ladungsspeicher allgemein noch bezeichnet?",
         image: "Bilder Elektrotechnik 4/bild2.jpg",
         answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permittivität µ"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "In welcher Einheit wird die Kapazität C angegeben ?",
+        question: "In welcher Einheit wird die Kapazität C angegeben?",
         image: "Bilder Querbeet/bild5.jpg",        
         answers: ["H", "Vs", "F", "As"],
         correct: [2]
@@ -325,56 +325,56 @@ const questions = {
 },
     {
         type: "textWithImage",
-        question: "In welcher Einheit wird die Induktivität L angegeben ?",
+        question: "In welcher Einheit wird die Induktivität L angegeben?",
         image: "Bilder Querbeet/bild5.jpg",        
         answers: ["H", "Vs", "F", "As"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Wie muß ein Strommessgerät im Stromkreis eingebaut werden ?",
+        question: "Wie muß ein Strommessgerät im Stromkreis eingebaut werden?",
         image: "Bilder Elektrotechnik 4/bild3.jpg",
         answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Wie muß ein Spannungsmessgerät im Stromkreis eingebaut werden ?",
+        question: "Wie muß ein Spannungsmessgerät im Stromkreis eingebaut werden?",
         image: "Bilder Elektrotechnik 4/bild4.jpg",
         answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Wie wird die Reihenschaltung noch bezeichnet ?",
+        question: "Wie wird die Reihenschaltung noch bezeichnet?",
         image: "Bilder Elektrotechnik 4/bild5.jpg",
         answers: ["Stromteiler", "Spannungsteiler", "Stromreduzierschaltung", "Spannungsreduzierschaltung"],
         correct: [1]
     },
     {
         type: "textWithImage",
-        question: "Welche Größe ist die gemeinsame Größe in einer Reihenschaltung ?",
+        question: "Welche Größe ist die gemeinsame Größe in einer Reihenschaltung?",
         image: "Bilder Elektrotechnik 4/bild5.jpg",
         answers: ["Arbeit W", "Spannung U", "Leistung P", "Strom I"],
         correct: [3]
     },
     {
         type: "textWithImage",
-        question: "Welche Aussage stimmt in Bezug auf einer Reihenschaltung ?",
+        question: "Welche Aussage stimmt in Bezug auf einer Reihenschaltung?",
         image: "Bilder Elektrotechnik 4/bild5.jpg",
         answers: ["Am kleinsten Widerstand fällt die größte Spannung ab", "Am größten Widerstand fällt die kleinste Spannung ab", "Durch den kleinsten Widerstand fließt der größte Strom", "Am größten Widerstand fällt die größte Spannung ab"],
         correct: [3]
     },
     {
         type: "textWithImage",
-        question: "Welche Aussage stimmt in Bezug auf einer Reihenschaltung ?",
+        question: "Welche Aussage stimmt in Bezug auf einer Reihenschaltung?",
         image: "Bilder Elektrotechnik 4/bild5.jpg",
         answers: ["Am kleinsten Widerstand wird die größte Leistung umgesetzt", "Am größten Widerstand wird die kleinste Leistung umgesetzt", "Am größten Widerstand wird die größte Leistung umgesetzt"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Mehrere Widerstände mit bekannten Werten sind in Reihe geschaltet. Wie berechnet man den Gesamtwiderstand ?",
+        question: "Mehrere Widerstände mit bekannten Werten sind in Reihe geschaltet. Wie berechnet man den Gesamtwiderstand?",
         image: "Bilder Querbeet/bild4.jpg",
         answers: ["Durch Addition der Kehrwerte der Teilwiderstände", "Durch Multiplikation der Teilwiderstände", "Durch Addition der Teilwiderstände"],
         correct: [2]
@@ -385,56 +385,56 @@ const questions = {
 "Elektrotechnik 5":[
     {
         "type": "textWithImage",
-        "question": "Was passiert, wenn mehrere Widerstände in Reihe geschaltet werden ?",
+        "question": "Was passiert, wenn mehrere Widerstände in Reihe geschaltet werden?",
         "image": "Bilder Elektrotechnik 4/bild5.jpg",
         "answers": ["Der Gesamtwiderstand sinkt", "Bei konstanter Spannung U sinkt der Strom", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung steigt der Strom"],
         "correct": [1]
     },
     {
         "type": "textWithImage",
-        "question": "Welche Größe ist die gemeinsame Größe in einer Parallelschaltung ?",
+        "question": "Welche Größe ist die gemeinsame Größe in einer Parallelschaltung?",
         "image": "Bilder Elektrotechnik 4/bild6.jpg",
         "answers": ["Spannung U", "Strom I", "Arbeit W", "Leistung P"],
         "correct": [0]
     },
     {
         "type": "textWithImage",
-        "question": "Wie wird die Parallelschaltung noch bezeichnet ?",
+        "question": "Wie wird die Parallelschaltung noch bezeichnet?",
         "image": "Bilder Elektrotechnik 4/bild6.jpg",
         "answers": ["Spannungsreduzierschaltung", "Spannungsteiler", "Stromreduzierschaltung", "Stromteiler"],
         "correct": [3]
     },
     {
         type: "textWithImage",
-        question: "Mehrere Widerstände mit bekannten Werten werden parallel geschaltet. Wie berechnet man den Gesamtwiderstand ?",
+        question: "Mehrere Widerstände mit bekannten Werten werden parallel geschaltet. Wie berechnet man den Gesamtwiderstand?",
         image: "Bilder Querbeet/bild5.jpg",
         answers: ["Durch den Kehrwert der vorherigen Addition der Kehrwerte der Teilwiderstände", "Durch Multiplikation der Teilwiderstände", "Durch Addition der Teilwiderstände"],
         correct: [0]
     },
     {
         type: "textWithImage",
-        question: "Welche Aussage stimmt in Bezug auf einer Parallelschaltung ?",
+        question: "Welche Aussage stimmt in Bezug auf einer Parallelschaltung?",
         image: "Bilder Elektrotechnik 4/bild6.jpg",
         answers: ["Am kleinsten Widerstand fällt die größte Spannung ab", "Am größten Widerstand fällt die kleinste Spannung ab", "Durch den kleinsten Widerstand fließt der größte Strom", "Am größten Widerstand fällt die größte Spannung ab"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Welche Aussage stimmt in Bezug auf einer Parallelschaltung ?",
+        question: "Welche Aussage stimmt in Bezug auf einer Parallelschaltung?",
         image: "Bilder Elektrotechnik 4/bild6.jpg",
         answers: ["Am kleinsten Widerstand wird die größte Leistung umgesetzt", "Am größten Widerstand wird die kleinste Leistung umgesetzt", "Am größten Widerstand wird die größte Leistung umgesetzt"],
         correct: [2]
     },
     {
         "type": "textWithImage",
-        "question": "Was passiert, wenn mehrere Widerstände parallel geschaltet werden ?",
+        "question": "Was passiert, wenn mehrere Widerstände parallel geschaltet werden?",
         "image": "Bilder Elektrotechnik 4/bild6.jpg",
         "answers": ["Der Gesamtwiderstand R steigt", "Bei konstanter Spannung U sinkt der Strom I", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung U steigt der Strom I"],
         "correct": [3]
     },
     {
         "type": "textWithImage",
-        "question": "Welche Aussage ist richtig ?",
+        "question": "Welche Aussage ist richtig?",
         "image": "Bilder Elektrotechnik 4/bild5.jpg",
         "answers": [
             "In einer Reihenschaltung ist der Gesamtwiderstand stets kleiner, als der größte Teilwiderstand",
@@ -445,7 +445,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Aussage ist richtig ?",
+        "question": "Welche Aussage ist richtig?",
         "image": "Bilder Elektrotechnik 4/bild6.jpg",
         "answers": [
             "In einer Parallelschaltung steigt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen",
@@ -457,7 +457,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Aussage ist falsch ?",
+        "question": "Welche Aussage ist falsch?",
         "image": "Bilder Elektrotechnik 4/bild6.jpg",
         "answers": [
             "In einer Parallelschaltung ist der Gesamtwiderstand stets kleiner, als der kleinste Teilwiderstand",
@@ -469,7 +469,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Steigt der Widerstandswert eines Leiters, wenn der Querschnitt größer gewählt wird ?",
+        "question": "Steigt der Widerstandswert eines Leiters, wenn ein größerer Querschnitt gewählt wird?",
         "image": "Bilder Elektrotechnik 5/bild1a.jpg",
         "answers": [
             "Nein, der Leiterwiderstand wird kleiner",
@@ -481,7 +481,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Was passiert mit dem Leiterwiderstand, wenn die Umgebungstemperatur steigt ?",
+        "question": "Was passiert mit dem Leiterwiderstand, wenn die Umgebungstemperatur steigt?",
         "image": "Bilder Elektrotechnik 5/bild2.jpg",
         "answers": ["Der Leiterwiderstand wird größer", "Die Umgebungstemperatur hat keinen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird kleiner"],
         "correct": [0] },
@@ -492,7 +492,7 @@ const questions = {
    
     {
         "type": "textWithImage",
-        "question": "Welche Gefahr besteht bei fehlerhaften Verbindungen ?",
+        "question": "Welche Gefahr besteht bei fehlerhaften Verbindungen?",
         "image": "Bilder Elektrotechnik 6/bild1.jpg",
         "answers": [
             "Der Übergangswiderstand als auch die Temperatur sinken - Brandgefahr!",
@@ -504,7 +504,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Aussage ist richtig ?",
+        "question": "Welche Aussagen sind richtig?",
         "image": "Bilder Querbeet/bild2.jpg",
         "answers": [
             "Der Innenwiderstand eines Multimeters ist im V-Bereich kleiner, als im A-Bereich.",
@@ -516,14 +516,14 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Wie groß ist der Unterschied zwischen Spitzen- und Effektivwert einer sinusförmigen Wechselspannung ?",
+        "question": "Wie groß ist der Unterschied zwischen Spitzen- und Effektivwert einer sinusförmigen Wechselspannung?",
         "image": "Bilder Elektrotechnik 6/bild2.jpg",
         "answers": ["√3", "√2", "√4", "√5"],
         "correct": [1]
     },
     {
         "type": "textWithImage",
-        "question": "Welche Geräte werden verwendet, um Spannungen zu messen ?",
+        "question": "Welche Geräte können verwendet werden, um elektrische Spannungen zu messen?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Voltmeter", "Strommesser", "Amperemeter", "Spannungsmesser"],
         "correct": [0, 3]
@@ -571,7 +571,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Einheit gilt für die Frequenz f z.B. bei Wechselspannungen ?",
+        "question": "In welcher Einheit wird die Frequenz f angegeben ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Hertz", "Volt", "Ampere", "Ohm"],
         "correct": [0]
@@ -580,7 +580,7 @@ const questions = {
         "type": "textWithImage",
         "question": "Welche Aussagen treffen auf einen Drehstromgenerator zu ?",
         "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Wandelt mechanische in elektrische Energie um", "Wandelt elektrische in mechanische Energie um", "Erzeugt Wechselspannung", "Erzeugt Gleichspannung"],
+        "answers": ["Wandelt mechanische in elektrische Energie um", "Wandelt elektrische in mechanische Energie um", "Erzeugt Drehstrom", "Erzeugt Gleichspannung"],
         "correct": [0, 2]
     }
 ],
