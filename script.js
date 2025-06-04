@@ -11,7 +11,7 @@ const questions = {
     },
     {
         type: "textWithImage",
-        question: "Welche Ladungsart ist für den Stromfluss in metallischen Leitern verantwortlich?",
+        question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich?",
         image: ["Bilder Elektrotechnik 1/bild2.jpg"],
         answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"],
         correct: [1]
@@ -91,7 +91,7 @@ const questions = {
 
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat der elektrische Widerstand?",
+        question: "Welchen Formelbuchstaben hat der elektrische Widerstand R?",
         image: "Bilder Elektrotechnik 1/bild7a.jpg",
         answers: ["P", "A", "R", "VA"],
         correct: [2]
@@ -112,7 +112,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Um welche Bauteile handelt es sich hier im Vordergrund?",
+        "question": "Um welche Bauteile handelt es sich im Vordergrund?",
         "image": "Bilder Elektrotechnik 2/bild2.jpg",
         "answers": ["Ohmsche Widerstände", "Wirkwiderstände", "Kapazitive Widerstände", "Induktive Widerstände"],
         "correct": [0]
@@ -147,7 +147,7 @@ const questions = {
     },
     {
         type: "textWithImage",
-        question: "Welchen Formelbuchstaben hat die elektrische Arbeit?",
+        question: "Welchen Formelbuchstaben hat die elektrische Arbeit W?",
         image: "Bilder Querbeet/bild4.jpg",       
         answers: ["Nm", "Ws", "W", "F"],
         correct: [2]
@@ -249,7 +249,7 @@ const questions = {
     },
     {
         type: "textWithImage",
-        question: "Welche zwei Leistungsarten im Wechselstromkreis gibt es neben der Wirkleistung P noch?",
+        question: "Welche zwei Leistungsarten im Wechselstromkreis gibt es neben der Wirkleistung P im Wechselstromkreis noch?",
         image: "Bilder Elektrotechnik 3/bild4.jpg",
         answers: ["Blindleistung", "Nulleistung", "Scheinleistung", "Kaltleistung"],
         correct: [0, 2]
@@ -276,21 +276,21 @@ const questions = {
 
  {
         type: "textWithImage",
-        question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom I und Spannung U im Wechselstromkreis?",
+        question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom und Spannung im Wechselstromkreis?",
         image: "Bilder Querbeet/bild5.jpg",       
         answers: ["Widerstand R", "Kondensator C", "Potentiometer R", "Spule L"],
         correct: [1, 3]
     },
     {
         type: "textWithImage",
-        question: "Wie lautet die pysikalische Bezeichnung von Spulen/wicklungen?",
+        question: "Wie wird eine Spule/Wicklung allgemein noch bezeichnet?",
         image: "Bilder Elektrotechnik 4/bild1.jpg",
         answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permitivität µ"],
         correct: [2]
     },
     {
         type: "textWithImage",
-        question: "Wie lautet die pysikalische Bezeichnung von Kondensatoren/Ladungsspeichern?",
+        question: "Wie wird ein Kondensator/Ladungsspeicher allgemein noch bezeichnet?",
         image: "Bilder Elektrotechnik 4/bild2.jpg",
         answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permittivität µ"],
         correct: [0]
@@ -3098,8 +3098,8 @@ const questions = {
 
 };
 
-
 const categoryNames = Object.keys(questions);
+const BLINK_DURATION = 1200; // Zeit in Millisekunden 
 
 let currentCategory = '';
 let score = 0;
@@ -3108,6 +3108,7 @@ let categoryQuestions = [];
 let selectedAnswers = [];
 let multiChoiceTimer = null;
 let startTime;
+
 
 function disableCompletedCategories() {
     const allCategoryButtons = document.querySelectorAll('.category-btn');
@@ -3125,7 +3126,6 @@ function disableCompletedCategories() {
 }
 
 
-// Fortschritt speichern
 function saveProgress() {
     const progressData = {
         questionIndex: questionIndex,
@@ -3133,6 +3133,7 @@ function saveProgress() {
         selectedAnswers: selectedAnswers,
     };
     localStorage.setItem(`progress_${currentCategory}`, JSON.stringify(progressData));
+    console.log(`Progress gespeichert für ${currentCategory}:`, progressData); // Debug
 }
 
 // Fortschritt laden
@@ -3146,8 +3147,12 @@ function loadProgress(category) {
 }
 
 function loadCategory(category) {
-    saveProgress(); // Den aktuellen Fortschritt speichern, bevor die Kategorie gewechselt wird
 
+    const introImage = document.getElementById('intro-image');
+    if (introImage) {
+        introImage.style.display = 'none';
+    }
+    saveProgress(); // Den aktuellen Fortschritt speichern, bevor die Kategorie gewechselt wird
     const allCategoryButtons = document.querySelectorAll('.category-btn');
     allCategoryButtons.forEach(btn => {
         if (!btn.classList.contains('answer-btn')) {
@@ -3222,15 +3227,16 @@ function displayQuestion() {
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = '';
 
-if (questionIndex >= categoryQuestions.length) {
-    displayScore();
-    saveProgress(); // Fortschritt speichern
-    disableCompletedCategories(); // Überprüfen und Kategorien deaktivieren/aussgrauen
-    if (allCategoriesCompleted()) {
-        showOverallResultButton();
+    if (questionIndex >= categoryQuestions.length) {
+        displayScore();
+        saveProgress();
+        disableCompletedCategories();
+        if (allCategoriesCompleted()) {
+            showOverallResultButton();
+        }
+        return;
     }
-    return;
-}
+
     const questionData = categoryQuestions[questionIndex];
     const questionElement = document.createElement('div');
     questionElement.classList.add('question');
@@ -3241,12 +3247,10 @@ if (questionIndex >= categoryQuestions.length) {
     questionNumber.innerHTML = `Frage ${questionIndex + 1} von ${categoryQuestions.length}`;
     questionElement.appendChild(questionNumber);
 
-    // Fragentext anzeigen
     const questionTitle = document.createElement('h3');
     questionTitle.innerHTML = questionData.question;
     questionElement.appendChild(questionTitle);
 
-    // Bild anzeigen (falls vorhanden)
     if (questionData.type === 'textWithImage') {
         const imageElement = document.createElement('img');
         imageElement.src = questionData.image;
@@ -3254,7 +3258,6 @@ if (questionIndex >= categoryQuestions.length) {
         questionElement.appendChild(imageElement);
     }
 
-    // Antwortmöglichkeiten anzeigen
     const answersContainer = document.createElement('div');
     answersContainer.classList.add('answers-container');
 
@@ -3277,56 +3280,72 @@ if (questionIndex >= categoryQuestions.length) {
     questionElement.appendChild(answersContainer);
     questionContainer.appendChild(questionElement);
 
-    // Weiter-Button erstellen
-    const nextButton = document.createElement('button');
-    nextButton.textContent = questionIndex >= categoryQuestions.length - 1 ? "Auswertung" : "Weiter";
-    nextButton.classList.add('next-btn');
-    nextButton.style.display = 'block';
-    nextButton.style.margin = '10px auto';
-    nextButton.style.padding = '10px 20px';
-    nextButton.style.fontSize = '16px';
-    nextButton.style.cursor = 'pointer';
-    nextButton.style.width = 'auto';
-    nextButton.style.maxWidth = '200px';
+    // Container für die Buttons (Reset und Weiter/Auswertung)
+    const buttonContainer = document.createElement('div');
+    buttonContainer.style.display = 'flex';
+    buttonContainer.style.justifyContent = 'center';
+    buttonContainer.style.gap = '10px';
 
-nextButton.onclick = function () {
+    // Reset-Button (mit richtiger Klasse)
+    const resetButton = document.createElement('button');
+    resetButton.textContent = 'Reset';
+    resetButton.classList.add('reset-btn');
+    resetButton.onclick = function () {
+        if (confirm('Möchten Sie wirklich alles zurücksetzen? Alle Fortschritte gehen verloren.')) {
+            clearProgress(); // Fortschritte löschen und Seite neu laden
+        }
+    };
+
+    buttonContainer.appendChild(resetButton);
+
+    // Weiter/Auswertungs-Button
+    const nextButton = document.createElement('button');
+    nextButton.textContent = questionIndex >= categoryQuestions.length - 1 ? 'Auswertung' : 'Weiter';
+    nextButton.classList.add('next-btn');
+    nextButton.onclick = function () {
     if (selectedAnswers.length === 0) {
-        nextButton.disabled = true; // Keine Aktion, wenn keine Antwort ausgewählt wurde
+        nextButton.disabled = true; // Keine Aktion, wenn keine Auswahl getroffen wurde
         return;
     }
 
-    // Fortschritt sofort speichern
+    // Deaktiviere den Button, sobald er geklickt wurde
+    nextButton.disabled = true;
+
+    // Fortschritt speichern
     saveProgress();
 
-    // Buttons deaktivieren während des Feedbacks
+    // Antwort-Buttons deaktivieren während des Feedbacks
     const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
     answerButtons.forEach(button => {
         button.disabled = true;
-        button.style.pointerEvents = 'none'; // Deaktiviert Mausinteraktionen
+        button.style.pointerEvents = 'none'; // Mausinteraktionen deaktivieren
     });
 
     // Feedback anzeigen (grün oder rot blinken lassen)
     evaluateAnswers();
 
-    // Nach Feedback zur nächsten Frage oder Ergebnis wechseln
-setTimeout(() => {
-    questionIndex++;
-    selectedAnswers = [];
-    if (questionIndex >= categoryQuestions.length) {
-        displayScore();
-        saveProgress(); // Fortschritt speichern
-        disableCompletedCategories(); // Kategorie ausgrauen
-        if (allCategoriesCompleted()) {
-            showOverallResultButton();
+    // Nach Feedback: Nächste Frage oder Ergebnis laden
+    setTimeout(() => {
+        questionIndex++;
+        selectedAnswers = [];
+        if (questionIndex >= categoryQuestions.length) {
+            displayScore(); // Ergebnisse anzeigen
+            saveProgress(); // Fortschritt speichern
+            disableCompletedCategories(); // Kategorien deaktivieren
+            if (allCategoriesCompleted()) {
+                showOverallResultButton();
+            }
+        } else {
+            displayQuestion(); // Nächste Frage anzeigen
         }
-    } else {
-        displayQuestion(); // Weitermachen bei den nächsten Fragen
-    }
-}, 2000);
+    }, 1200); // Wartezeit für Blink-Effekte (Feedback)
 };
 
-    questionContainer.appendChild(nextButton);
+    buttonContainer.appendChild(nextButton);
+
+    questionContainer.appendChild(buttonContainer);
 }
+
 
 function blinkCorrectAnswers(correctIndices) {
     const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
@@ -3350,9 +3369,8 @@ function blinkCorrectAnswers(correctIndices) {
                 button.textContent = textSpan.textContent;
             }
         });
-    }, 2000);
+}, BLINK_DURATION); // <--- Verwendet die zentrale Blinkzeit
 }
-
 
 function evaluateAnswers() {
     const questionData = categoryQuestions[questionIndex];
@@ -3495,6 +3513,7 @@ function displayScore() {
         const overallResultButton = document.createElement('button');
         overallResultButton.textContent = 'Gesamtübersicht';
         overallResultButton.id = 'overall-result-btn';
+        overallResultButton.className = 'overall-result-btn'; // Existierende CSS-Klasse anwenden
         overallResultButton.onclick = displayOverallScore;
         questionContainer.appendChild(overallResultButton);
     }
@@ -3588,7 +3607,7 @@ function displayOverallScore() {
 
     // Sound-Logik (nur bei Platin) - OHNE AUTOPLAY
     if (medal === 'Platin') {
-        const platinSound = new Audio('Die Flippers.mp3');
+        const platinSound = new Audio('Opus.mp3');
         
         // Sound-Button
         const soundButton = document.createElement('button');
@@ -3652,7 +3671,7 @@ function showOverallResultButton() {
         const overallResultButton = document.createElement('button');
         overallResultButton.textContent = 'Gesamtübersicht';
         overallResultButton.id = 'overall-result-btn';
-	overallResultButton.className = 'overall-result-btn';
+        overallResultButton.className = 'overall-result-btn'; // Existierende CSS-Klasse anwenden
         overallResultButton.onclick = function() {
             displayOverallScore();
         };
@@ -3679,11 +3698,22 @@ function shuffleCategories() {
 }
 
 function checkAllCategoriesCompleted() {
-    let allCompleted = allCategoriesCompleted();
+    const allCompleted = allCategoriesCompleted(); // Überprüfen, ob alle Kategorien abgeschlossen sind
+
     if (allCompleted) {
-        showResetButton();
+        // "Gesamtübersicht"-Button hinzufügen
+        const categoryContainer = document.getElementById('category-container');
+        if (!document.getElementById('overall-result-btn')) { // Nur hinzufügen, wenn der Button fehlt
+            const overallResultButton = document.createElement('button');
+            overallResultButton.textContent = 'Gesamtübersicht';
+            overallResultButton.id = 'overall-result-btn';
+            overallResultButton.classList.add('overall-result-btn'); // Optional für Styling
+            overallResultButton.onclick = displayOverallScore; // Führt zur Gesamtübersicht
+            categoryContainer.appendChild(overallResultButton);
+        }
     }
-    disableCompletedCategories();
+
+    disableCompletedCategories(); // Deaktive abgeschlossene Kategorien
 }
 
 function confirmCategorySwitch(newCategory) {
@@ -3719,55 +3749,41 @@ function clearProgress() {
     location.reload();
 }
 
-function displayErrorReport() {
-    const questionContainer = document.getElementById('question-container');
-    questionContainer.innerHTML = ''; // Vorherigen Inhalt löschen
+function renderErrorReport(targetElement = document.body) {
+    targetElement.innerHTML = ''; // Inhalt löschen
 
-    const errorTitle = document.createElement('h2');
-    errorTitle.textContent = `Fehlerbericht für Kategorie ${currentCategory}`;
-    errorTitle.style.textAlign = 'center';
-    questionContainer.appendChild(errorTitle);
+    const title = document.createElement("h2");
+    title.textContent = "Fehlerbericht";
+    title.style.textAlign = "center";
+    targetElement.appendChild(title);
 
     if (fehlerhafteFragen.length === 0) {
-        const noErrorsMessage = document.createElement('p');
-        noErrorsMessage.textContent = "Herzlichen Glückwunsch! Du hast in dieser Kategorie keine Fehler gemacht.";
-        noErrorsMessage.style.textAlign = 'center';
-        questionContainer.appendChild(noErrorsMessage);
+        const noErrors = document.createElement("p");
+        noErrors.textContent = "Herzlichen Glückwunsch! Du hast keine Fehler gemacht.";
+        noErrors.style.textAlign = "center";
+        targetElement.appendChild(noErrors);
     } else {
-        const errorList = document.createElement('div');
-        errorList.classList.add('error-list');
+        const errorList = document.createElement("ul");
 
         fehlerhafteFragen.forEach((eintrag, index) => {
-            const errorItem = document.createElement('div');
-            errorItem.classList.add('feedback-question');
+            const errorItem = document.createElement("li");
 
-            const questionText = document.createElement('p');
-            questionText.innerHTML = `<strong>Frage ${index + 1}:</strong> ${eintrag.frage}`;
-            errorItem.appendChild(questionText);
-
-            const userAnswerText = document.createElement('p');
-            userAnswerText.innerHTML = `<strong>Deine Antwort:</strong> <span class="wrong-answer">${eintrag.falsch.join(", ")}</span>`;
-            errorItem.appendChild(userAnswerText);
-
-            const correctAnswerText = document.createElement('p');
-            correctAnswerText.innerHTML = `<strong>Richtige Antwort:</strong> <span class="correct-answer">${eintrag.richtig.join(", ")}</span>`;
-            errorItem.appendChild(correctAnswerText);
+            errorItem.innerHTML = `
+                <strong>${index + 1}. ${eintrag.frage}</strong><br>
+                Deine Antwort: <span style="color: red;">${eintrag.falsch}</span><br>
+                Richtige Antwort: <span style="color: green;">${eintrag.richtig}</span>
+            `;
 
             errorList.appendChild(errorItem);
         });
 
-        questionContainer.appendChild(errorList);
+        targetElement.appendChild(errorList);
     }
 
-    // Reset-Button wurde vollständig entfernt
-
-
-    // Zurück-zum-Start Button
-    const resetButton = document.createElement('button');
-    resetButton.textContent = 'Zurück zum Start';
-    resetButton.classList.add('reset-btn');
-    resetButton.onclick = clearProgress;
-    questionContainer.appendChild(resetButton);
+    const backButton = document.createElement("button");
+    backButton.textContent = "Zurück zum Start";
+    backButton.onclick = clearProgress;
+    targetElement.appendChild(backButton);
 }
 
 
@@ -3781,80 +3797,9 @@ function speichereFehlversuch(frage, ausgewaehlteAntwort, richtigeAntwort) {
     });
 }
 
-function zeigeFehlerbericht() {
-    let berichtContainer = document.createElement("div");
-    berichtContainer.innerHTML = "<h2>Fehlerbericht</h2>";
-
-    fehlerhafteFragen.forEach((eintrag, index) => {
-        let frageElement = document.createElement("p");
-        frageElement.innerHTML = `<strong>${index + 1}. ${eintrag.frage}</strong>`;
-
-        let falschElement = document.createElement("p");
-        falschElement.innerHTML = `Deine Antwort: <span style="color: red;">${eintrag.falsch}</span>`;
-
-        let richtigElement = document.createElement("p");
-        richtigElement.innerHTML = `Richtige Antwort: <span style="color: green;">${eintrag.richtig}</span>`;
-
-        berichtContainer.appendChild(frageElement);
-        berichtContainer.appendChild(falschElement);
-        berichtContainer.appendChild(richtigElement);
-        berichtContainer.appendChild(document.createElement("hr"));
-    });
-
-    document.body.innerHTML = ""; // Alles vorherige löschen
-    document.body.appendChild(berichtContainer);
-
-    let zurueckButton = document.createElement("button");
-    zurueckButton.textContent = "Zurück zum Start";
-    zurueckButton.addEventListener("click", () => location.reload());
-    document.body.appendChild(zurueckButton);
-}
-
-function blinkAllAnswers() {
-    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
-    const imageButtons = document.querySelectorAll('.answer-img');
-    if (imageButtons.length > 0) {
-        blinkAllImages();
-    } else {
-        answerButtons.forEach(button => {
-            button.classList.add('blinking');
-        });
-
-        setTimeout(() => {
-            answerButtons.forEach(button => {
-                button.classList.remove('blinking');
-            });
-        }, 4000);
-    }
-}
 
 
-function blinkAllAnswers() {
-    const nextButton = document.querySelector('.next-btn');
-    if (nextButton) {
-        nextButton.disabled = true;
-    }
 
-    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
-    const imageButtons = document.querySelectorAll('.answer-img');
-    if (imageButtons.length > 0) {
-        blinkAllImages();
-    } else {
-        answerButtons.forEach(button => {
-            button.classList.add('blinking');
-        });
-
-        setTimeout(() => {
-            answerButtons.forEach(button => {
-                button.classList.remove('blinking');
-            });
-            // Re-enable the "Weiter" button after blinking
-            if (nextButton) {
-                nextButton.disabled = false;
-            }
-        }, 3000);
-    }
-}
 
 function blinkSelectedIncorrectAnswers(correctAnswers) {
     const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
@@ -3876,7 +3821,7 @@ function blinkSelectedIncorrectAnswers(correctAnswers) {
                 button.textContent = textSpan.textContent;
             }
         });
-    }, 2000);
+}, BLINK_DURATION); // <--- Verwendet die zentrale Blinkzeit
 }
 
 function displayFinalOverallScore() {
@@ -3974,13 +3919,13 @@ function displayFinalOverallScore() {
     // "Zurück zum Start"-Button
     const resetButton = document.createElement('button');
     resetButton.textContent = 'Zurück zum Start';
-    resetButton.classList.add('reset-btn'); 
     resetButton.onclick = clearProgress; 
     questionContainer.appendChild(resetButton); 
 }
 
 window.onload = function () {
     loadCategories(); // Kategorien laden
+    checkAllCategoriesCompleted(); // Überprüfung: Sind alle Kategorien abgeschlossen?
 
     // Fortschritt der aktuellen Kategorie wiederherstellen
     if (currentCategory) {
