@@ -890,7 +890,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Stromhöhe im AC-Bereich gilt als tödlich ?",
+        "question": "Welche Stromhöhe im AC-Bereich ist als tödlich zu betrachten ?",
         "image": "Bilder Querbeet/bild4.jpg",
         "answers": ["500 mA", "0,5 A", "0,3 A", "0,03 A"],
         "correct": [0, 1]
