@@ -3,39 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EffT-Theorie<br> Fragekatalog</title>
+    <title>EffT-Prüfungsvorbereitung</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-<h1>EffT-Theorie<br> Fragekatalog</h1>    </header>
+        <h1>EffT-Prüfungsvorbereitung</h1>
+    </header>
     <main>
+        <!-- Hauptkategorien -->
         <section id="category-container" class="category-container">
-            <!-- Hauptkategorien werden hier geladen -->
+            <!-- Kategorien werden hier von JS geladen -->
         </section>
-        <section id="subcategory-container" class="subcategory-container" style="display:none;">
-            <!-- Unterkategorien werden hier geladen -->
+
+        <!-- Unterkategorien -->
+        <section id="subcategory-container" class="subcategory-container" style="display: none;">
+            <!-- Unterkategorien werden hier von JS geladen -->
         </section>
+
+        <!-- Container für Fragen -->
         <section id="question-container" class="questions-area">
-            <!-- Fragen und Antworten werden hier geladen -->
-        </section>
-        <section id="category-container" class="category-container">
-           <img src="Titelbild.jpg" alt="Beschreibung des Bildes" id="intro-image" class="intro-image">
+            <!-- Die aktuelle aktive Frage -->
+            <div id="active-question-container">
+                <p id="question-text"></p>
+                <div id="image-container" class="image-container">
+                    <!-- Bilder werden hier geladen -->
+                </div>
+                <ul id="answer-container">
+                    <!-- Antworten werden hier dynamisch eingefügt -->
+                </ul>
+            </div>
         </section>
     </main>
+
+    <!-- Punktestand -->
     <section id="score-container" class="centered" style="display: none;">
         <p id="score"></p>
     </section>
+
     <footer>
         <p>&copy; 2025 Hendrick Neef</p>
     </footer>
-    
-    <!-- Hinzufügen der Balken -->
+
+    <!-- Ergänzung von Balken unter das Layout -->
     <div class="balken-container">
         <div class="roter-balken"></div>
         <div class="gruener-balken"></div>
     </div>
 
+    <!-- Wichtig: script.js für dynamische Bilder -->
     <script src="script.js"></script>
 </body>
 </html>
