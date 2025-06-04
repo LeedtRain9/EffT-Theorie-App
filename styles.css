@@ -119,13 +119,18 @@ h3 {
 
 .next-btn {
     margin: 20px 0;
-    background-color: #8B8B83;
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 15px;
     width: 50%;
+    font-size: 16px; /* Hinzufügen: Schriftgröße auf 16px anpassen */
+}
+
+.next-btn:hover {
+    background-color: #218838; /* Dunkleres Grün beim Schweben */
 }
 
 .new-quiz-btn, .restart-btn {
