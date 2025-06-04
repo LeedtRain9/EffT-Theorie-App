@@ -654,3 +654,8 @@ img {
     border-radius: 15px;
     display: block;
 }
+
+img[src="Titelbild.jpg"] {
+    width: 250px;   /* Bildbreite auf 250 Pixel begrenzen */
+    height: auto;   /* Höhe proportional anpassen */
+}
